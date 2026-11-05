@@ -1,0 +1,64 @@
+/* One complete poster. Its own colors extend into the surrounding stage. */
+.winter-stage.fairy-books .whole-poster-hero {
+  background: #081d43;
+}
+.winter-stage.fairy-books .whole-poster-hero > .scene-scenery,
+.winter-stage.fairy-books .whole-poster-hero > .scene-stars,
+.winter-stage.fairy-books .whole-poster-hero > .holiday-wing {
+  display: none;
+}
+.whole-poster-hero .poster-scene {
+  --poster-fade: clamp(24px, 3vw, 54px);
+  position: relative;
+  isolation: isolate;
+  padding-bottom: var(--poster-fade);
+  background: #081d43;
+}
+.whole-poster-hero .poster-ambient {
+  position: absolute;
+  z-index: 0;
+  inset: -36px -48px 0;
+  background: url('assets/key-art-final-21.webp') center / 100% 100% no-repeat;
+  filter: blur(clamp(24px, 4vw, 80px));
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(#000 0%, #000 calc(100% - var(--poster-fade) * 2), transparent 100%);
+  mask-image: linear-gradient(#000 0%, #000 calc(100% - var(--poster-fade) * 2), transparent 100%);
+}
+.winter-stage.fairy-books .whole-poster-hero .key-art {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1639px;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+}
+.winter-stage.fairy-books .whole-poster-hero .key-art > .whole-poster-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  /* Only the outer margin fades. The title, faces and cast stay in one image. */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent), linear-gradient(180deg, transparent, #000 2.5%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent), linear-gradient(180deg, transparent, #000 2.5%, #000 94%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+.winter-stage.fairy-books .whole-poster-hero .hero-booking {
+  position: relative;
+  z-index: 1;
+  padding-top: 14px;
+}
+@media (max-width: 1639px) {
+  .whole-poster-hero .poster-scene { --poster-fade: 24px; }
+  .whole-poster-hero .poster-ambient { inset: -16px -24px 0; filter: blur(24px); }
+  .winter-stage.fairy-books .whole-poster-hero .show-location {
+    font-size: 11px;
+    line-height: 1.5;
+    gap: 4px;
+    padding: 13px 16px;
+    text-align: center;
+  }
+  .winter-stage.fairy-books .whole-poster-hero .hero-booking { padding-top: 10px; }
+}

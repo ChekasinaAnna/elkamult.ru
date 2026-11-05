@@ -1,0 +1,23 @@
+/* Full-width color fields: no rectangular overlay edges at responsive widths. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .scene-night:not(.whole-poster-hero) {
+  background: radial-gradient(ellipse at 76% 44%,#9473da69 0%,#7360ce3d 30%,transparent 72%), linear-gradient(160deg,#042293 0%,#34339c 36%,#6751b5 62%,#18339c 86%,#042293 100%);
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes .whole-poster-hero {
+  background:linear-gradient(180deg,#0135b1 0%,#0135b1 64%,#3739ae 84%,#6c55bb 100%);
+}
+/* A dissolving wave overlaps the snow margin without covering characters. */
+.whole-poster-hero .hero-wave-bridge {
+  position:relative; z-index:2; height:clamp(36px,5vw,72px); margin-top:calc(-1 * clamp(36px,5vw,72px)); pointer-events:none;
+  background:linear-gradient(180deg,#3038b000,#333bb26b 48%,#4843b3c9 100%);
+  -webkit-mask-image:url('assets/hero-soft-wave-70.svg'); mask-image:url('assets/hero-soft-wave-70.svg');
+  -webkit-mask-size:100% 100%; mask-size:100% 100%; filter:blur(5px); transform:scaleX(1.015);
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes .whole-poster-hero .hero-booking { background:transparent; }
+/* Fade artwork washes too; the palette remains visible behind existing stars. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .scene-night:not(.whole-poster-hero) > .poster-wash { -webkit-mask-image:radial-gradient(ellipse,#0009 5%,transparent 75%); mask-image:radial-gradient(ellipse,#0009 5%,transparent 75%); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .venue-invitation {
+  background:radial-gradient(ellipse at 72% 45%,#8d6ad966,transparent 74%),linear-gradient(145deg,#153b9e,#6551b4 70%,#27389e);
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes footer {
+  background:radial-gradient(ellipse at 76% 40%,#8d6bd455,transparent 74%),linear-gradient(155deg,#042293,#5b49ad 62%,#18339c);
+}

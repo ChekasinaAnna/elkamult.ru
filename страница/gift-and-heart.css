@@ -1,0 +1,99 @@
+/* The product is a real-alpha PNG, without the white sheet or card. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .gift-visual {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes .gift-visual::before { display: none; }
+.gift-visual .bag-view { background: transparent; border-radius: 0; aspect-ratio: 1.04; }
+.gift-visual .bag-view img { width: 200%; left: 0; top: -13%; filter: drop-shadow(0 13px 11px #17366525); }
+.gift-visual .bag-view[data-side="back"] img { left: -100%; }
+
+/* A little colour, without changing the horizontal quote layout. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .header { background: rgba(0, 26, 131, .7933333333); }
+.producer-quote .quote-keyword { color: #ffcf86; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .parents-heading.with-brand-hero { grid-template-columns: minmax(0, 1.06fr) minmax(0, 1fr); gap: 32px; max-width: 1240px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .parents-heading .parents-cast { width: 100%; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .parents-heading .parents-cast > img { width: 100%; height: clamp(300px, 34vw, 440px); object-fit: contain; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .parents-heading .parents-cast::after { display: none; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .character.sky .character-image { overflow: visible; padding-bottom: 9px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .character.sky .character-image > img { width: 175%; max-width: none; height: auto; flex: none; object-fit: contain; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide > img { width: 175%; max-width: none; height: auto; left: 50%; top: auto; bottom: 0; transform: translateX(-50%); object-fit: contain; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion .heart-caption .growing-line {
+  display: inline;
+  margin: 0;
+  color: #c65b14;
+  font-size: 110%;
+  font-weight: 800;
+}
+
+/* The original white QBRIX mark is legible against a poster-blue card. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .partner-logo-card.qbrix-partner {
+  background: radial-gradient(ellipse at 25% 20%, #2360ba, transparent 70%), #062b87;
+  border-color: #abcaff;
+  box-shadow: 0 12px 28px #19396722;
+}
+.partner-logo-card.qbrix-partner img {
+  width: min(100%, 235px);
+  height: auto;
+  max-height: 105px;
+  filter: none;
+}
+
+/* The footer princesses share the title poster's soft light and atmosphere. */
+.winter-stage.fairy-books.mult-universe.artful-scenes footer { padding-top: 0; }
+.social-poster-backdrop {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #001a83;
+}
+.social-poster-backdrop::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -45px;
+  background: url('assets/key-art-final-21.webp') center / cover no-repeat;
+  filter: blur(30px);
+  opacity: .38;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(transparent, #000 22%, #000 78%, transparent);
+}
+.social-poster-backdrop::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: radial-gradient(ellipse at 72% 48%, #00155266, transparent 65%);
+  pointer-events: none;
+}
+.social-poster-backdrop .social-invitation { position: relative; z-index: 1; }
+.corporate-trigger { font: inherit; text-align: left; cursor: pointer; }
+.corporate-dialog {
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100% - 40px);
+  overflow: auto;
+  margin: auto;
+  padding: 43px 37px 32px;
+  border: 2px solid #d4e8ff;
+  border-radius: 30px;
+  background: #fff8ed;
+  color: #173665;
+  box-shadow: 0 25px 90px #000b4659;
+}
+.corporate-dialog::backdrop { background: #001247bf; backdrop-filter: blur(6px); }
+.corporate-close { position: absolute; top: 8px; right: 12px; width: 40px; height: 40px; border: 0; border-radius: 50%; color: #173665; background: transparent; font-size: 31px; cursor: pointer; }
+.corporate-dialog h2 { font-size: clamp(29px, 3vw, 38px); line-height: 1.15; margin-bottom: 21px; }
+.corporate-dialog .corporate-discount { font-size: 28px; font-weight: 1000; color: #bc5614; margin-bottom: 20px; }
+.corporate-dialog > p:not(.eyebrow):not(.corporate-discount) { font-size: 17px; line-height: 1.6; }
+.corporate-dialog .corporate-terms { color: #50647e; }
+.corporate-dialog .button { margin-top: 10px; }
+.corporate-phone { display: block; color: #174f93; font-size: 18px; font-weight: 850; margin-top: 20px; }
+.corporate-close:focus-visible { outline: 3px solid #145da8; }
+@media (max-width: 560px) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes .parents-heading.with-brand-hero { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .parents-heading .parents-cast > img { height: auto; }
+  .corporate-dialog { padding: 40px 24px 29px; }
+  .social-poster-backdrop::before { background-size: auto 100%; filter: blur(22px); opacity: .33; }
+}

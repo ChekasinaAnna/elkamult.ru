@@ -1,0 +1,170 @@
+/* Restore the compact horizontal producer composition. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .evidence-benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .evidence-benefits article { display: block; transform: none; padding: 0; overflow: hidden; border-radius: 28px; background: #fff; box-shadow: 0 14px 32px #19366514; }
+.evidence-benefits .benefit-photo { display: block; width: 100%; height: clamp(230px, 24vw, 330px); object-fit: cover; }
+.evidence-benefits .benefit-copy { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; padding: 27px 25px 30px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .evidence-benefits h3 { color: #173665; font-size: clamp(23px, 2.2vw, 29px); line-height: 1.17; }
+.evidence-benefits .benefit-copy p { font-size: 16px; color: #50647e; line-height: 1.55; margin-top: 13px; }
+.evidence-benefits .infographic-icon { margin: 0; width: 64px; height: 72px; border-radius: 22px; }
+.evidence-benefits .infographic-icon img { width: 49px; height: 49px; }
+.benefit-archive-note { font-size: 12px; color: #50647e; margin: 18px 0 0; }
+.gift-heading { text-align: center; margin-bottom: 40px; }
+.gift-heading .eyebrow { justify-content: center; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .gift-heading h2 { font-size: clamp(32px, 3.6vw, 48px); line-height: 1.17; text-wrap: balance; }
+.gift-copy .gift-contents-heading { font-size: clamp(23px, 2.3vw, 30px); color: #173665; margin: 12px 0 24px; }
+.gift-contents { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 17px; }
+.gift-contents li { display: grid; grid-template-columns: 36px minmax(0, 1fr); align-items: center; gap: 13px; color: #173665; font-size: clamp(19px, 1.8vw, 23px); font-weight: 850; line-height: 1.3; }
+.gift-contents li::before { content: ""; width: 36px; height: 36px; background: url('assets/icon-gift.svg') center / contain no-repeat; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .gift-copy .gift-coupon-tip { font-size: 18px; line-height: 1.6; color: #50647e; margin-bottom: 24px; }
+.gift-coupon-tip span { white-space: nowrap; }
+.ticket-followups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 35px; }
+.ticket-followup { display: flex; align-items: flex-start; gap: 17px; padding: 24px; border: 1px solid #c8ddff52; border-radius: 23px; background: #ffffff0a; color: #fff; text-decoration: none; }
+.ticket-followup > img { width: 52px; height: 52px; flex: 0 0 52px; object-fit: contain; }
+.ticket-followup > span { display: flex; flex-direction: column; gap: 8px; }
+.ticket-followup b { font-size: 19px; line-height: 1.3; }
+.ticket-followup small { color: #d5e7ff; font-size: 14px; line-height: 1.5; }
+.ticket-followup em { font-size: 15px; font-weight: 850; font-style: normal; color: #ffe2a0; margin-top: 4px; }
+.ticket-followup:hover { background: #ffffff14; }
+.ticket-followup:focus-visible { outline: 3px solid #ffdb7b; outline-offset: 4px; }
+.partner-logo-card img[src$="qbrix-logo-23.svg"] { width: min(100%, 205px); height: auto; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .partner-logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .producer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .78fr) minmax(0, 1fr);
+  gap: clamp(35px, 5vw, 75px);
+  align-items: center;
+  padding-top: 0;
+}
+.producer-grid > .producer-copy { padding: 48px 0; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .producer-quote {
+  margin: 26px 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  font-size: clamp(19px, 1.75vw, 23px);
+  line-height: 1.55;
+  font-weight: 400;
+  color: #e5efff;
+  text-wrap: balance;
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes .video-section { padding-top: 92px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .venue-section { padding-top: 92px; }
+
+/* The official scenery reads in the margins; copy remains over a quiet centre. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .scene-light .scene-scenery { opacity: .24; filter: blur(1px); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .scene-night .scene-scenery { opacity: .29; filter: blur(1px); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .brand-forms { opacity: .52; width: clamp(260px, 28vw, 440px); }
+.parents-heading.with-brand-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  align-items: center;
+  gap: 34px;
+  max-width: 1060px;
+  text-align: left;
+}
+.parents-heading .parents-text > p:last-child { color: #50647e; font-size: 18px; }
+.parents-cast img { filter: drop-shadow(0 3px 2px #1736651a); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .moments-cast .ground-shadow { left: 36%; width: 29%; bottom: 1%; }
+.brand-hero-layer { position: relative; margin: 0; isolation: isolate; }
+.brand-hero-layer > img { position: relative; z-index: 1; width: 100%; height: 255px; object-fit: contain; object-position: bottom; }
+.brand-hero-layer::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: -3px;
+  left: 15%;
+  right: 15%;
+  height: 17px;
+  background: radial-gradient(ellipse, #15366135, transparent 70%);
+  filter: blur(4px);
+}
+
+/* The princesses invite families to the two supplied social channels. */
+.social-invitation {
+  display: grid;
+  grid-template-columns: minmax(280px, .8fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: 55px;
+  padding-top: 65px;
+  padding-bottom: 58px;
+  border-bottom: 1px solid #abc8ff30;
+}
+.social-cast { display: flex; align-items: flex-end; justify-content: center; gap: 8px; }
+.social-cast .brand-hero-layer { width: 48%; }
+.social-cast .social-princess-pair { width: 100%; }
+.social-cast .brand-hero-layer > img { height: clamp(260px, 27vw, 340px); }
+.social-cast .social-princess-pair > img { height: clamp(320px, 31vw, 420px); }
+.social-cast .social-princess-pair::after { left: 12%; right: 12%; background: radial-gradient(ellipse at 30% 50%, #00083d99, transparent 25%), radial-gradient(ellipse at 70% 50%, #00083d99, transparent 25%); }
+.social-cast .brand-hero-layer::after { background: radial-gradient(ellipse, #00083d99, transparent 70%); }
+footer .social-copy h2 { font-size: clamp(30px, 3.2vw, 43px); line-height: 1.16; color: #fff; margin: 0 0 27px; letter-spacing: -.035em; }
+footer .social-copy h2 span { color: #c9e6ff; }
+.social-channel-links { display: flex; flex-wrap: wrap; gap: 13px; }
+footer .social-channel {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 17px;
+  min-height: 70px;
+  border: 1px solid #b6d7ff80;
+  border-radius: 18px;
+  background: #ffffff0a;
+  color: #fff;
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+footer .social-channel:hover { background: #ffffff16; border-color: #e5f3ff; }
+footer .social-channel:focus-visible { outline: 3px solid #ffdb7b; outline-offset: 4px; }
+.social-channel svg { width: 42px; height: 42px; flex: 0 0 42px; }
+.social-channel span { display: flex; flex-direction: column; gap: 3px; }
+.social-channel b { font-size: 16px; font-weight: 900; }
+.social-channel small { font-size: 13px; color: #d5e6ff; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .footer-top { grid-template-columns: 1fr 1fr .65fr; }
+
+@media (max-width: 800px) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes .producer-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); gap: 25px; }
+  .producer-grid > img { height: 360px; margin-top: 0; }
+  .producer-grid > .producer-copy { padding: 35px 0; }
+  .producer-grid h2 { font-size: 32px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .producer-quote { font-size: 20px; }
+  .social-invitation { gap: 28px; grid-template-columns: minmax(220px, .8fr) minmax(0, 1fr); }
+  .social-cast .brand-hero-layer > img { height: 265px; }
+  .parents-heading.with-brand-hero { gap: 23px; grid-template-columns: minmax(0, 1fr) 175px; }
+  .brand-hero-layer > img { height: 235px; }
+}
+@media (max-width: 560px) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes .partner-logo-grid { grid-template-columns: minmax(0, 1fr); max-width: 430px; margin-inline: auto; }
+  .ticket-followups { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+  .ticket-followup { padding: 21px 18px; gap: 14px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .evidence-benefits { grid-template-columns: minmax(0, 1fr); gap: 23px; }
+  .evidence-benefits .benefit-photo { height: 240px; }
+  .evidence-benefits .benefit-copy { grid-template-columns: 56px minmax(0, 1fr); gap: 15px; padding: 22px 19px 26px; }
+  .evidence-benefits .infographic-icon { width: 56px; height: 64px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .producer-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .producer-grid > img { height: 300px; margin: 30px auto 0; }
+  .producer-grid > .producer-copy { padding: 30px 0 40px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .video-section { padding-top: 62px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .venue-section { padding-top: 62px; }
+  .parents-heading.with-brand-hero { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .parents-heading .brand-hero-layer { width: 150px; justify-self: end; }
+  .parents-heading .brand-hero-layer > img { height: 185px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .brand-forms { opacity: .4; width: 240px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .scene-light .scene-scenery { opacity: .2; }
+  .social-invitation { grid-template-columns: minmax(0, 1fr); gap: 22px; padding-block: 43px; text-align: center; }
+  .social-cast { width: min(100%, 340px); margin: 0 auto; }
+  .social-cast .brand-hero-layer > img { height: 235px; }
+  .social-cast .social-princess-pair > img { height: 320px; }
+  .social-channel-links { justify-content: center; }
+  footer .social-channel { text-align: left; flex: 1 1 230px; justify-content: center; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer-show-center { grid-column: 1 / -1; }
+}
+
+/* One clickable television next to the video invitation under the poster. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .hero-booking-actions .watch-link { display: inline-flex; align-items: center; gap: 13px; min-height: 72px; max-width: none; text-align: left; }
+.watch-link .watch-tv { display: block; width: 80px; height: 72px; flex: 0 0 80px; filter: drop-shadow(0 5px 10px #00115255); }
+@media (max-width: 560px) {
+  .watch-link .watch-tv { width: 68px; height: 61px; flex-basis: 68px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .hero-booking-actions .watch-link { gap: 10px; min-height: 61px; }
+}

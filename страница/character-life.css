@@ -1,0 +1,28 @@
+/* Independent transform properties preserve existing positioning transforms. */
+@keyframes character-breath {
+  0%, 100% { scale: 1; rotate: calc(var(--life-sway, .45deg) * -1); translate: 0 0; }
+  50% { scale: var(--life-max-scale, 1.05); rotate: var(--life-sway, .45deg); translate: 0 var(--life-rise, 0px); }
+}
+.life-character {
+  transform-origin: 50% 96%;
+  animation: character-breath var(--life-duration, 16s) ease-in-out var(--life-delay, 0s) infinite;
+  animation-play-state: paused;
+}
+.life-character.life-visible { animation-play-state: running; }
+.characters-resting .life-character.life-visible { animation-play-state: paused; }
+@keyframes calendar-leaf {
+  0%, 100% { scale: .95; rotate: calc(var(--life-sway) * -1); }
+  27% { scale: .98; rotate: calc(var(--life-sway) * .25); }
+  53% { scale: 1.05; rotate: var(--life-sway); }
+  79% { scale: .985; rotate: calc(var(--life-sway) * -.45); }
+}
+.date-card.life-character { transform-origin: 50% 50%; --life-max-scale: 1.05; animation-name: calendar-leaf; }
+.hero-animated-layer.life-character { transform-origin: 50% 50%; --life-max-scale: 1.03; }
+.date-card.life-character.life-visible:is(:hover, :focus-within) { animation-play-state: paused; }
+@media(prefers-reduced-motion: reduce) {
+  .life-character { animation: none; }
+}
+
+/* Keep the calendar tractor wheels clear during its gentle breathing. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .ticket-cast .tractor-guide { overflow: visible; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .ticket-cast .tractor-guide > img { left: 52%; --life-max-scale: 1.03; }

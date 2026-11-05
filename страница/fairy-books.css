@@ -1,0 +1,69 @@
+/* Original fairytale set dressing from the five supplied cartoon asset packs. */
+.winter-stage.fairy-books{background:#edf4ff}
+.winter-stage.fairy-books .scene-scenery{background-image:var(--book-scene,url('assets/sp-background-10.webp'));background-position:var(--book-position,center);background-size:var(--book-size,cover);background-repeat:no-repeat;opacity:var(--book-opacity,.3);mask-image:var(--book-mask,radial-gradient(ellipse at center,transparent 22%,#000 85%));pointer-events:none}
+.fairy-books .poster-hero{--book-scene:url('assets/sp-background-01.webp');--book-opacity:.5;--book-mask:linear-gradient(to right,#000,transparent 20%,transparent 80%,#000)}
+.fairy-books .intro{--book-scene:url('assets/sp-location-05.webp');--book-opacity:.34;--book-mask:radial-gradient(ellipse at 40% 30%,transparent 20%,#000 88%);background:radial-gradient(ellipse at 65% 10%,#fff9e8,transparent 60%),#eaf4ff}
+.fairy-books .video-section{--book-scene:url('assets/sp-background-10.webp');--book-opacity:.4;--book-mask:radial-gradient(ellipse at center,transparent 14%,#000 85%)}
+.fairy-books .heroes-section{--book-scene:url('assets/sp-background-10.webp');--book-opacity:.32;--book-mask:radial-gradient(ellipse at center,transparent 18%,#000 80%);background:radial-gradient(ellipse at 50% 15%,#fff9eb,transparent 60%),#e8f4ff}
+.fairy-books .parents-section{--book-scene:url('assets/sp-location-05.webp');--book-opacity:.19;--book-mask:linear-gradient(90deg,#000,transparent 28%,transparent 72%,#000)}
+.fairy-books .story-section{--book-scene:url('assets/sp-background-02.webp');--book-opacity:.22;--book-mask:radial-gradient(ellipse at center,#000,transparent 92%);--book-position:left center;background:radial-gradient(ellipse at 25% 45%,#153d77,transparent 58%),#081c3d}
+.fairy-books .moments{--book-scene:url('assets/omnom-toy-box.webp');--book-opacity:.16;--book-mask:radial-gradient(ellipse at center,transparent 36%,#000 88%);background:linear-gradient(135deg,#fff7e7,#f4f0ff 70%,#e9f6ff)}
+.fairy-books .tickets-section{--book-scene:url('assets/sp-background-01.webp');--book-opacity:.36;--book-mask:linear-gradient(to bottom,#000,transparent 58%,#000);background:radial-gradient(ellipse at 0 40%,#223e78,transparent 56%),radial-gradient(ellipse at 100% 70%,#452c70,transparent 62%),#071b3a}
+.fairy-books .gift-section{--book-scene:url('assets/omnom-toy-box.webp');--book-opacity:.24;--book-mask:radial-gradient(ellipse at center,transparent 22%,#000 90%);background:radial-gradient(ellipse at 40% 10%,#fff1c7,transparent 70%),#fcf4e8}
+.fairy-books .reviews-section{--book-scene:url('assets/omnom-toy-box.webp');--book-opacity:.13;--book-mask:radial-gradient(ellipse at center,transparent 40%,#000 90%);background:linear-gradient(#f3f6ff,#f7f1ff)}
+.fairy-books .venue-section{--book-scene:url('assets/sp-location-05.webp');--book-opacity:.2;--book-mask:radial-gradient(ellipse at center,transparent 16%,#000 90%)}
+.fairy-books .faq-section{--book-scene:url('assets/sp-background-10.webp');--book-opacity:.3;--book-mask:radial-gradient(ellipse at center,transparent 15%,#000 90%)}
+.fairy-books .final-section{--book-scene:url('assets/sp-background-01.webp');--book-opacity:.4;--book-mask:radial-gradient(ellipse at center,transparent 15%,#000 90%);background:radial-gradient(ellipse at 0 60%,#163a73,transparent 55%),radial-gradient(ellipse at 100% 25%,#3b2b63,transparent 55%),#071b3a}
+/* Big recognizable props frame the content, and remain behind the reading layer. */
+.fairy-books .book-prop{position:absolute;display:block;z-index:0;pointer-events:none;width:230px;isolation:isolate}
+.fairy-books .book-prop img{display:block;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 12px 18px #0b225933)}
+.fairy-books .book-prop.left{left:-75px;top:22%}
+.fairy-books .book-prop.right{right:-75px;top:48%}
+.fairy-books .book-prop.low{top:auto;bottom:25px}
+.fairy-books .book-prop.gifts{width:285px;right:-90px;transform:rotate(-9deg)}
+.fairy-books .book-prop.candy{width:170px;right:-75px;transform:rotate(15deg)}
+.fairy-books .book-prop.globe{width:235px;left:-80px;transform:rotate(-7deg)}
+.fairy-books .book-prop.snowman{width:240px;right:-85px;transform:rotate(8deg)}
+.fairy-books .book-prop.arrows{width:195px;left:-95px;transform:rotate(-14deg)}
+.fairy-books .book-prop.bauble{width:205px;top:18px}
+.fairy-books .book-prop.bauble::before{content:"";position:absolute;left:50%;bottom:99%;height:140px;width:1px;background:#dfc2808c}
+.fairy-books .intro>.book-prop,.fairy-books .heroes-section>.book-prop,.fairy-books .moments>.book-prop,.fairy-books .reviews-section>.book-prop{opacity:.85}
+.fairy-books .gift-section>.book-prop{opacity:.95}
+.fairy-books .book-garland{position:absolute;top:0;left:0;right:0;height:160px;z-index:0;pointer-events:none;overflow:hidden}
+.fairy-books .book-garland::before{content:"";position:absolute;width:110%;height:235px;left:-5%;top:-177px;border:1px solid #d9bd7899;border-radius:0 0 50% 50%;box-shadow:0 2px 14px #ffe09b22}
+.fairy-books .book-garland img{position:absolute;width:110px;height:137px;object-fit:contain;top:13px;filter:drop-shadow(0 6px 15px #ffc46625)}
+.fairy-books .book-garland img:nth-child(1){left:8%;top:-14px;width:132px;height:164px;transform:rotate(-9deg)}
+.fairy-books .book-garland img:nth-child(2){left:50%;transform:translateX(-50%);top:-28px;width:116px;height:145px}
+.fairy-books .book-garland img:nth-child(3){right:8%;top:-10px;width:136px;height:170px;transform:rotate(10deg)}
+.fairy-books .venue-garland img{width:105px;min-width:0;height:131px;object-fit:contain;left:auto;right:18px;top:-9px;transform:rotate(10deg)}
+.fairy-books .holiday-wing{background-image:url('assets/booba-gold-bow.webp');background-size:130px auto;background-position:30% 25px;background-repeat:no-repeat;opacity:.64;mask-image:linear-gradient(to right,#000 80%,transparent)}
+.fairy-books .holiday-wing-right{background-position:30% 150px}
+.fairy-books .poster-hero>.holiday-wing{background-size:155px auto;opacity:.9}
+.fairy-books .scene-stars{opacity:.48}
+.fairy-books .benefits article::before{content:"";position:absolute;inset:auto 0 0;height:110px;background:url('assets/sp-background-10.webp') center/cover;opacity:.12;border-radius:0 0 21px 21px;pointer-events:none}
+.fairy-books .benefits article{isolation:isolate}
+.fairy-books .benefits article>*{position:relative;z-index:1}
+.fairy-books .benefits article:nth-child(2)::before{background-image:url('assets/omnom-toy-box.webp')}
+.fairy-books .benefits article:nth-child(4)::before{background-image:url('assets/sp-background-02.webp');opacity:.1}
+.fairy-books .character::before{background:linear-gradient(#fff9e2,#d7eaff);box-shadow:0 12px 23px #3d457721,0 0 32px #fff1be88}
+.fairy-books .gift-date{background-image:linear-gradient(135deg,#fffef5f2,#eef6fff2),url('assets/omnom-toy-box.webp');background-size:cover}
+.fairy-books .gift-date:nth-child(2){background-image:linear-gradient(135deg,#fffef5f2,#f0e9fff2),url('assets/omnom-toy-box.webp')}
+.fairy-books .gift-date:nth-child(3){background-image:linear-gradient(135deg,#fffef5f2,#e7f6eff2),url('assets/omnom-toy-box.webp')}
+/* Inline ornaments retain an expressive size on phones too. */
+.fairy-books .book-detail{display:block;pointer-events:none;position:relative}
+.fairy-books .book-detail img{display:block;width:100%;height:auto;object-fit:contain}
+.fairy-books .book-gift-detail{width:215px;margin:20px 0 7px;transform:rotate(-4deg)}
+.fairy-books .book-globe-detail{width:205px;margin:25px 0 12px;filter:drop-shadow(0 12px 18px #23426822)}
+.fairy-books .book-arrow-detail{width:130px;height:90px;margin:18px 0 0;overflow:hidden}
+.fairy-books .book-arrow-detail img{width:140px;max-width:none;margin-top:-20px}
+.fairy-books .venue-address-content .book-arrow-detail{position:absolute;right:21px;bottom:35px;width:105px;height:75px;opacity:.5;transform:rotate(-15deg)}
+.fairy-books .venue-address-content .book-arrow-detail img{width:115px;margin-top:-18px}
+.fairy-books .gift-section .book-gift-detail{filter:drop-shadow(0 8px 8px #70406915)}
+@media(min-width:1500px){.fairy-books .book-prop{width:270px}.fairy-books .book-prop.left{left:-28px}.fairy-books .book-prop.right{right:-35px}.fairy-books .book-prop.gifts{width:330px;right:-75px}.fairy-books .book-prop.globe{width:270px;left:-70px}.fairy-books .book-prop.candy{width:195px;right:-80px}.fairy-books .book-prop.snowman{width:290px;right:-95px}.fairy-books .book-prop.arrows{width:245px;left:-100px}.fairy-books .book-prop.bauble{width:230px}.fairy-books .holiday-wing{background-size:165px auto;background-position:32% 25px}.fairy-books .holiday-wing-right{background-position:32% 175px}.fairy-books .book-garland img:nth-child(1){left:9%;width:154px;height:192px;top:-40px}.fairy-books .book-garland img:nth-child(3){right:9%;width:154px;height:192px;top:-35px}}
+@media(min-width:2100px){.fairy-books .book-prop.left{left:calc((100vw - 1520px)/4 - 100px)}.fairy-books .book-prop.right{right:calc((100vw - 1520px)/4 - 100px)}.fairy-books .book-prop.gifts{right:calc((100vw - 1520px)/4 - 135px)}.fairy-books .book-prop.candy{right:calc((100vw - 1520px)/4 - 75px)}.fairy-books .book-prop.globe{left:calc((100vw - 1520px)/4 - 105px)}.fairy-books .book-prop.arrows{left:calc((100vw - 1520px)/4 - 85px)}.fairy-books .book-prop.snowman{right:calc((100vw - 1520px)/4 - 140px)}.fairy-books .holiday-wing{background-size:180px auto;background-position:50% 25px}}
+@media(max-width:1100px){.fairy-books .book-prop{display:none}.fairy-books .book-garland img:nth-child(1){left:3%}.fairy-books .book-garland img:nth-child(3){right:3%}.fairy-books .book-globe-detail{width:180px}}
+@media(max-width:800px){.fairy-books .book-garland img:nth-child(2){display:none}.fairy-books .book-garland img:nth-child(1){left:0;top:-20px}.fairy-books .book-garland img:nth-child(3){right:0;top:-14px}.fairy-books .book-gift-detail{width:190px}.fairy-books .venue-address-content .book-arrow-detail{display:none}}
+@media(max-width:560px){.winter-stage.fairy-books .scene-scenery{background-position:center;background-size:var(--book-mobile-size,auto 100%);opacity:calc(var(--book-opacity,.3) * .8);mask-image:radial-gradient(ellipse at center,transparent 28%,#000 95%)}.fairy-books .intro{--book-mobile-size:auto 100%}.fairy-books .moments,.fairy-books .gift-section,.fairy-books .reviews-section{--book-mobile-size:auto 520px}.fairy-books .book-garland{height:140px}.fairy-books .book-garland img:nth-child(1){width:102px;height:127px;left:-28px;top:-10px}.fairy-books .book-garland img:nth-child(3){width:102px;height:127px;right:-28px;top:-18px}.fairy-books .book-garland::before{height:200px;top:-155px}.fairy-books .book-globe-detail{width:185px;margin:22px auto 8px}.fairy-books .book-gift-detail{width:190px;margin-top:18px}.fairy-books .book-arrow-detail{width:120px;height:80px}.fairy-books .book-arrow-detail img{width:130px}.fairy-books .venue-garland img{width:92px;height:115px;right:14px;top:-10px}.fairy-books .gift-copy h2{font-size:41px}}
+
+.fairy-books .intro-cast .cast-art::before{inset:2% -10%;border-radius:0;background:url('assets/mimi-form-blue.webp') center/contain no-repeat;opacity:.55;mask-image:radial-gradient(ellipse,#000 35%,transparent 73%)}
+.fairy-books .moments-cast .cast-art::before{inset:2% -10%;border-radius:0;background:url('assets/mimi-form-gold.webp') center/contain no-repeat;opacity:.58;mask-image:radial-gradient(ellipse,#000 35%,transparent 73%)}

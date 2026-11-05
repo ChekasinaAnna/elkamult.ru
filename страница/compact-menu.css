@@ -1,0 +1,16 @@
+.winter-stage.fairy-books.mult-universe.artful-scenes .header { background:rgba(0,26,131,.5077333333); }
+.header .nav { display:grid; grid-template-columns:90px auto minmax(0,1fr) auto; grid-template-rows:1fr; gap:14px; min-height:78px; padding-block:4px; }
+.header .nav > .brand { grid-column:1; grid-row:1; }
+.header .nav > .brand img { width:90px; height:62px; object-fit:contain; }
+.header .nav-event-information { grid-column:2; grid-row:1; display:flex; flex-wrap:nowrap; justify-content:start; align-items:center; gap:12px; padding:0; line-height:1.2; }
+.nav-event-information .nav-event-place { display:flex; flex-direction:column; gap:3px; font-size:11px; font-weight:800; white-space:nowrap; }
+.header .nav-event-information > b { font-size:29px; font-weight:1000; white-space:nowrap; }
+.header .desktop-nav { grid-column:3; grid-row:1; justify-content:center; gap:20px; font-size:24px; white-space:nowrap; }
+.header .nav > .button { grid-column:4; grid-row:1; white-space:nowrap; }
+.header .menu-toggle { grid-column:5; grid-row:1; }
+html { scroll-padding-top:100px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .hero-booking.hero-booking-centered { gap:0; padding-top:20px; padding-bottom:10px; }
+@media(max-width:1200px) { .header .desktop-nav { font-size:20px; gap:15px; } .header .nav { gap:12px; } .header .nav-event-information > b { font-size:26px; } }
+@media(max-width:1000px) { .header .desktop-nav { display:none; } .header .nav { grid-template-columns:80px auto minmax(0,1fr) 30px; gap:12px; min-height:74px; } .header .nav > .brand img { width:80px; height:60px; } .header .nav > .button { grid-column:3; justify-self:end; } .header .menu-toggle { display:block; grid-column:4; } }
+@media(max-width:600px) { .header .nav.wrap { width:calc(100% - 24px); grid-template-columns:56px auto minmax(0,1fr) 26px; min-height:64px; gap:6px; padding-block:3px; } .header .nav > .brand img { width:56px; height:48px; } .header .nav-event-information { gap:6px; } .nav-event-information .nav-event-place { font-size:9px; gap:2px; } .header .nav-event-information > b { font-size:20px; } .header .nav > .button { font-size:11px; padding:10px 9px; min-width:0; } .winter-stage.fairy-books.mult-universe.artful-scenes .hero-booking.hero-booking-centered { padding-top:16px; padding-bottom:8px; } html { scroll-padding-top:85px; } }
+@media(max-width:390px) { .header .nav.wrap { width:calc(100% - 16px); grid-template-columns:42px auto minmax(0,1fr) 24px; gap:4px; } .header .nav > .brand img { width:42px; height:42px; } .header .nav-event-information > b { font-size:17px; } .nav-event-information .nav-event-place { font-size:8px; } .header .nav-event-information { gap:4px; } .header .nav > .button { font-size:10px; padding-inline:6px; } }

@@ -1,0 +1,10 @@
+.photo-depth-image { transform-origin: 50% 50%; scale: 1; translate: 0 0; transition: scale .8s ease-out, translate .55s ease-out; }
+@media(hover:hover) and (pointer:fine) {
+  .photo-depth-active > .photo-depth-image { scale: 1.03; translate: calc(var(--photo-x, 0) * -.65%) calc(var(--photo-y, 0) * -.65%); }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .date-card { scale: 1; rotate: 0deg; transition: scale .65s ease-out, rotate .65s ease-out; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .date-card:hover { scale: 1.03; rotate: .18deg; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .photo-depth-image, .winter-stage.fairy-books.mult-universe.artful-scenes .date-card { transition: none; }
+  .photo-depth-active > .photo-depth-image { translate: 0 0; }
+}

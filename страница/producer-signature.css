@@ -1,0 +1,3 @@
+.producer-name .producer-center-logo { display:block; position:relative; width:min(113.333px,33.333%); aspect-ratio:1029 / 217; overflow:hidden; margin-top:15px; }
+.producer-name .producer-center-logo > img { display:block; position:absolute; top:0; left:0; width:100%; height:auto; max-width:none; filter:none; border-radius:0; }
+@media(max-width:560px) { .producer-name .producer-center-logo { width:min(96.667px,33.333%); } }

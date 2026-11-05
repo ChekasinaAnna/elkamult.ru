@@ -1,0 +1,19 @@
+.winter-stage.fairy-books.mult-universe.artful-scenes .adventure-invitation { font-size: 16.2px; max-width: none; }
+@media(min-width:1101px) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes .adventure-invitation { white-space: nowrap; }
+}
+@media(max-width:560px) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes .adventure-invitation { font-size: 14.4px; }
+}
+.gift-visual .bag-view { z-index: 2; scale: 1; rotate: 0deg; transition: scale .9s ease-in-out, rotate .9s ease-in-out; transform-origin: 50% 50%; }
+@keyframes gift-hover-sway {
+  0%, 100% { rotate: -.6deg; }
+  50% { rotate: .6deg; }
+}
+@media(hover:hover) and (pointer:fine) {
+  .gift-visual .bag-view:hover { z-index: 5; scale: 1.2; animation: gift-hover-sway 8s ease-in-out infinite; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .gift-visual .bag-view { transition: none; }
+  .gift-visual .bag-view:hover { animation: none; }
+}

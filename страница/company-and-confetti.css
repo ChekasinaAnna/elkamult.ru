@@ -1,0 +1,8 @@
+.poster-confetti-shell { position: absolute; z-index: 1; left: 51.2%; top: 79.5%; width: 34%; aspect-ratio: 1; transform: translate(-50%, -50%); pointer-events: none; }
+.poster-confetti-orbit { position: absolute; inset: 0; background: url('assets/wheel-color-confetti-46.svg') center / contain no-repeat; animation: galaxy-counterclockwise 300s linear -43s infinite; animation-play-state: paused; }
+.poster-confetti-orbit.life-visible { animation-play-state: running; }
+.characters-resting .poster-confetti-orbit.life-visible { animation-play-state: paused; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .company-signature .company-principle { font-size: clamp(26px, 2.5vw, 36px); line-height: 1.22; }
+.company-signature .company-light-statement { font-size: clamp(19px, 2vw, 26px); line-height: 1.5; margin-top: 22px; color: #254d79; }
+.company-light-statement strong { color: #bd6118; font-weight: 900; }
+@media(prefers-reduced-motion:reduce) { .poster-confetti-orbit { animation: none; } }

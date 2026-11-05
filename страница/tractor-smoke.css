@@ -1,0 +1,36 @@
+/* The overlay uses the PNG's own aspect ratio, keeping the pipe aligned at every size. */
+.tractor-guide .tractor-smoke { position: absolute; z-index: 2; width: 175%; aspect-ratio: 1672 / 941; left: 52%; bottom: 0; transform: translateX(-50%); pointer-events: none; }
+.tractor-smoke .smoke-puff { position: absolute; left: 45.4%; top: 9.2%; width: 6%; height: 7%; border-radius: 50%; opacity: 0; background: radial-gradient(ellipse at 35% 56%, #e8f7ffb8 0 28%, transparent 63%), radial-gradient(ellipse at 66% 55%, #d8edffa8 0 30%, transparent 65%), radial-gradient(ellipse at 50% 35%, #f5fcffbf 0 27%, transparent 67%); animation: tractor-puff 5.4s ease-out infinite; animation-play-state: paused; }
+.tractor-smoke .smoke-puff:nth-child(2) { animation-delay: -.9s; }
+.tractor-smoke .smoke-puff:nth-child(3) { animation-delay: -1.8s; }
+.tractor-smoke .smoke-puff:nth-child(4) { animation-delay: -2.7s; }
+.tractor-smoke .smoke-puff:nth-child(5) { animation-delay: -3.6s; }
+.tractor-smoke .smoke-puff:nth-child(6) { animation-delay: -4.5s; }
+.tractor-smoke.life-visible .smoke-puff { animation-play-state: running; }
+.characters-resting .tractor-smoke.life-visible .smoke-puff { animation-play-state: paused; }
+@keyframes tractor-puff {
+  0% { opacity: 0; scale: 0.25; translate: -50.000% -60.000%; }
+  9% { opacity: 0.585; scale: 0.66; translate: -56.757% -124.680%; }
+  42% { opacity: 0.45; scale: 1.54; translate: -80.145% -348.574%; }
+  75% { opacity: 0.252; scale: 2.09; translate: -111.329% -647.098%; }
+  100% { opacity: 0; scale: 2.42; translate: -126.921% -796.360%; }
+}
+@keyframes tractor-idle {
+  0%, 100% { scale: 1; rotate: 0deg; translate: 0 0; }
+  25% { scale: 1.005; rotate: .012deg; translate: 0 0; }
+  60% { scale: 1.0015; rotate: -.006deg; translate: 0 0; }
+}
+/* This tractor has its own engine pulse; it is excluded from character breathing. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide > img { scale: 1; rotate: 0deg; translate: 0 0; transform-origin: 50% 96%; animation: tractor-idle .45s ease-in-out infinite; animation-play-state: paused; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide.life-visible > img { animation-play-state: running; }
+.characters-resting.winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide.life-visible > img,
+.characters-resting .winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide.life-visible > img { animation-play-state: paused; }
+@media(prefers-reduced-motion:reduce) {
+  .tractor-smoke { display: none; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide > img { animation: none; }
+}
+
+.winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide .ground-shadow { left: 52%; transform: translateX(-50%) scale(1.5); }
+
+/* Allow the plume to pass gently into the light section above. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .tickets-section { overflow: visible; }

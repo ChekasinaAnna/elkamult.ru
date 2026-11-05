@@ -1,0 +1,70 @@
+/* Original Blue Tractor forms, stars and rings, dissolved into the margins. */
+.brand-forms {
+  position: absolute;
+  z-index: 0;
+  bottom: 150px;
+  right: -65px;
+  width: clamp(220px, 24vw, 390px);
+  aspect-ratio: 1024 / 399;
+  background: url('assets/tractor-fairy-forms-22.webp') center / contain no-repeat;
+  opacity: .36;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse, #000 36%, transparent 74%);
+  mask-image: radial-gradient(ellipse, #000 36%, transparent 74%);
+}
+.parents-section .brand-forms { right: auto; left: -95px; bottom: auto; top: 70px; }
+.gift-section .brand-forms { right: -85px; bottom: 160px; }
+.scene-night .brand-forms { mix-blend-mode: screen; opacity: .17; }
+
+/* Photo first, then the quiet emotional sentence, then the booking action. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+  max-width: 940px;
+  padding: 86px 0 90px;
+  text-align: center;
+}
+.final-inner .final-emotion { width: 100%; margin: 0; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion img {
+  height: clamp(330px, 39vw, 530px);
+  object-position: 53% 44%;
+}
+.final-emotion figcaption { padding: 32px 28px 20px; background: #fff8ec; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion .heart-caption {
+  color: #173665;
+  font-size: clamp(29px, 3.25vw, 44px);
+  line-height: 1.17;
+  letter-spacing: -.035em;
+  font-weight: 800;
+  margin: 0;
+  text-wrap: balance;
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion .heart-caption span {
+  display: inline-block;
+  margin-top: 14px;
+  color: #174f93;
+  font-weight: 1000;
+}
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion .photo-credit {
+  font-size: 11px;
+  font-weight: 500;
+  color: #566d86;
+  margin: 21px 0 0;
+  max-width: none;
+}
+.final-inner > div { width: 100%; }
+.final-inner .eyebrow { justify-content: center; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-inner p:not(.eyebrow) { max-width: none; }
+.final-inner .button { margin-top: 17px; }
+
+@media (max-width: 700px) {
+  .brand-forms { width: 235px; opacity: .24; right: -120px; }
+  .parents-section .brand-forms { top: 25px; left: -140px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .final-inner { padding: 58px 0 70px; gap: 26px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion img { height: clamp(285px, 75vw, 400px); }
+  .final-emotion figcaption { padding: 25px 15px 18px; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion .heart-caption { font-size: clamp(26px, 6.9vw, 36px); }
+  .final-inner .eyebrow { font-size: 10px; }
+}

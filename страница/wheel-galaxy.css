@@ -1,0 +1,26 @@
+@keyframes galaxy-counterclockwise { from { rotate: 0deg; } to { rotate: -360deg; } }
+.story-art .galaxy-orbit { position: absolute; inset: 0; z-index: 0; pointer-events: none; transform-origin: 50% 50%; animation: galaxy-counterclockwise 300s linear infinite; animation-play-state: paused; }
+.story-art .galaxy-orbit.life-visible { animation-play-state: running; }
+.characters-resting .story-art .galaxy-orbit.life-visible { animation-play-state: paused; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .story-art .galaxy-orbit > img { -webkit-mask-image: radial-gradient(circle closest-side, transparent 26%, #000 31%, #000 76%, transparent 100%); mask-image: radial-gradient(circle closest-side, transparent 26%, #000 31%, #000 76%, transparent 100%); }
+.story-art .galaxy-orbit::after { content: ""; position: absolute; inset: -3%; background: url('assets/galaxy-white-arms-38.svg') center / contain no-repeat; opacity: .5; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .story-art > img { z-index: 2; -webkit-mask-image: radial-gradient(circle closest-side, #000 32%, #000e6 34%, transparent 38%); mask-image: radial-gradient(circle closest-side, #000 32%, #000e6 34%, transparent 38%); }
+@media(prefers-reduced-motion:reduce) { .story-art .galaxy-orbit { animation: none; } }
+.poster-wheel-shell { position: absolute; z-index: 2; left: 50.8%; top: 78.5%; width: 54%; aspect-ratio: 1280 / 1026; transform: translate(-50%, -50%); pointer-events: none; opacity: .62; -webkit-mask-image: radial-gradient(circle closest-side, transparent 42%, #000 49%, #000 68%, transparent 84%); mask-image: radial-gradient(circle closest-side, transparent 42%, #000 49%, #000 68%, transparent 84%); }
+.poster-wheel-orbit { position: absolute; inset: 0; transform-origin: 50% 50%; animation: galaxy-counterclockwise 300s linear infinite; animation-play-state: paused; }
+.poster-wheel-orbit.life-visible { animation-play-state: running; }
+.characters-resting .poster-wheel-orbit.life-visible { animation-play-state: paused; }
+.poster-wheel-orbit > img { display: block; width: 100%; height: auto; }
+.poster-wheel-orbit::after { content: ""; position: absolute; inset: 0; background: url('assets/galaxy-white-arms-38.svg') center / contain no-repeat; opacity: .45; }
+@media(prefers-reduced-motion:reduce) { .poster-wheel-orbit { animation: none; } }
+/* Broader layered white arms in the story block; the central logo keeps its size. */
+.winter-stage.fairy-books.mult-universe.artful-scenes .story-art { -webkit-mask-image: none; mask-image: none; overflow: visible; z-index: 0; }
+.story-art .galaxy-orbit-middle { scale: 1.25; opacity: .48; animation-delay: -57s; }
+.story-art .galaxy-orbit-outer { scale: 1.5; opacity: .32; animation-delay: -118s; }
+.story-art :is(.galaxy-orbit-middle, .galaxy-orbit-outer)::after { inset: -3%; opacity: .75; -webkit-mask-image: radial-gradient(ellipse, #000 52%, transparent 84%); mask-image: radial-gradient(ellipse, #000 52%, transparent 84%); }
+.story-grid .story-copy { position: relative; z-index: 1; }
+
+/* Colorful satellites circle the same fixed center, independently of the arms. */
+.story-art .story-color-orbits { position: absolute; inset: 14%; z-index: 3; pointer-events: none; }
+.story-color-orbits .story-stars-orbit { background-image: url('assets/hero-orbit-stars-49.svg'); animation-delay: -38s; }
+.story-color-orbits .story-dots-orbit { background-image: url('assets/hero-orbit-dots-49.svg'); animation-delay: -152s; }

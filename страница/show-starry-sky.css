@@ -1,0 +1,5 @@
+.video-section > .video-starfield { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: url('assets/show-starry-sky-61.svg') center top / 1200px 800px repeat; opacity: .7; -webkit-mask-image: linear-gradient(transparent, #000 9%, #000 82%, transparent); mask-image: linear-gradient(transparent, #000 9%, #000 82%, transparent); }
+@media(max-width:560px) { .video-section > .video-starfield { background-size: 900px 600px; opacity: .6; } }
+
+.video-cast .cast-art .video-full-moon { --moon-base: clamp(60px, 6vw, 76px); --moon-size: calc(var(--moon-base) * 2); position: absolute; z-index: 0; width: var(--moon-size); height: var(--moon-size); top: calc(-1 * var(--moon-base) - 5px); left: calc(58% - var(--moon-base) * 2); transform: translateX(-50%); background: url('assets/fairytale-full-moon-61.svg') center / contain no-repeat; pointer-events: none; }
+.video-cast .cast-art .ground-shadow { display: none; }

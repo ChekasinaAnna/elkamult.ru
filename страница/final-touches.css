@@ -1,0 +1,18 @@
+.winter-stage.fairy-books.mult-universe.artful-scenes .hero-booking-centered .hero-age-rating { font-size: 26px; line-height: 1.4; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .under-three-note strong { font-size: clamp(42px, 4.6vw, 56px); line-height: 1.15; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .final-emotion figcaption { position: relative; isolation: isolate; background: #eaf5ff; }
+.final-emotion figcaption::before { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: url('assets/quiet-sparkles-28.svg') center / 100% 100% no-repeat; opacity: .9; }
+.final-section > .poster-wash::after { content: ""; position: absolute; inset: 0; background: url('assets/quiet-sparkles-28.svg') center / 760px 520px repeat; opacity: .3; pointer-events: none; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .venue-city-map { position: relative; z-index: 1; margin-top: 32px; }
+.venue-map-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 0 0 14px; color: #173665; }
+.venue-map-heading p { font-size: 18px; margin: 0; }
+.map-pin-label { font-size: 21px; color: #164a92; font-weight: 1000; }
+.venue-city-map iframe { display: block; width: 100%; height: 360px; border: 5px solid #fff; border-radius: 26px; background: #eaf4ff; box-shadow: 0 12px 30px #14387816; }
+.venue-city-map figcaption { padding-top: 14px; text-align: right; }
+.venue-city-map figcaption a { color: #164a92; font-size: 16px; font-weight: 900; text-underline-offset: 4px; }
+@media(max-width:560px) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes .hero-booking-centered .hero-age-rating { font-size: 24px; }
+  .venue-city-map iframe { height: 300px; border-width: 3px; border-radius: 20px; }
+  .venue-map-heading p { font-size: 16px; }
+  .venue-city-map figcaption { text-align: left; }
+}

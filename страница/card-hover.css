@@ -1,0 +1,9 @@
+:is(.evidence-benefits > article, .cast-live-gallery > figure, .live-moments > figure, .photo-grid > figure, .review-emotion, .audience-strip > figure, .final-emotion, .producer-grid > img) { scale: 1; rotate: 0deg; transform-origin: 50% 50%; transition: scale .7s ease-in-out, rotate .7s ease-in-out, box-shadow .7s ease-in-out; }
+@keyframes evidence-card-sway { 0%, 100% { rotate: -.16deg; } 50% { rotate: .16deg; } }
+@media(hover:hover) and (pointer:fine) {
+  .winter-stage.fairy-books.mult-universe.artful-scenes :is(.evidence-benefits > article, .cast-live-gallery > figure, .live-moments > figure, .photo-grid > figure, .review-emotion, .audience-strip > figure, .final-emotion, .producer-grid > img):hover { scale: 1.02; animation: evidence-card-sway 8s ease-in-out infinite; box-shadow: 0 18px 36px #19366520; }
+}
+@media(prefers-reduced-motion:reduce) {
+  :is(.evidence-benefits > article, .cast-live-gallery > figure, .live-moments > figure, .photo-grid > figure, .review-emotion, .audience-strip > figure, .final-emotion, .producer-grid > img) { transition: none; }
+  .winter-stage.fairy-books.mult-universe.artful-scenes :is(.evidence-benefits > article, .cast-live-gallery > figure, .live-moments > figure, .photo-grid > figure, .review-emotion, .audience-strip > figure, .final-emotion, .producer-grid > img):hover { animation: none; }
+}

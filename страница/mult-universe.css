@@ -1,0 +1,180 @@
+/* A single cobalt-blue world, sampled from the whole show poster. */
+.winter-stage.fairy-books.mult-universe {
+  --stage-blue: #0736ab;
+  --stage-deep: #042293;
+  --stage-light: #dce6ff;
+  --ink: #112c67;
+  --muted: #53678e;
+  --blue: #0736ab;
+  background: var(--stage-deep);
+}
+.winter-stage.fairy-books.mult-universe :is(.intro, .video-section, .heroes-section, .parents-section, .story-section, .moments, .tickets-section, .gift-section, .reviews-section, .producer-section, .venue-section, .faq-section, .final-section) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #fff;
+  background: radial-gradient(ellipse at 50% 35%, #1145ba80, transparent 68%), var(--stage-deep);
+}
+.mult-universe .poster-wash {
+  position: absolute;
+  inset: -64px;
+  z-index: 0;
+  pointer-events: none;
+  background: url('assets/key-art-final-21.webp') center / cover no-repeat;
+  filter: blur(64px);
+  mix-blend-mode: luminosity;
+  opacity: .19;
+  -webkit-mask-image: linear-gradient(transparent, #000 19%, #000 81%, transparent);
+  mask-image: linear-gradient(transparent, #000 19%, #000 81%, transparent);
+}
+.mult-universe .whole-poster-hero > .poster-wash,
+.mult-universe .company-partners > .poster-wash { display: none; }
+.winter-stage.fairy-books.mult-universe .whole-poster-hero,
+.winter-stage.fairy-books.mult-universe .whole-poster-hero .poster-scene { background: var(--stage-deep); }
+.winter-stage.fairy-books.mult-universe .header { background: #001a83ee; border-color: #adc6ff30; }
+.winter-stage.fairy-books.mult-universe .show-location { background: #001a83; }
+.mult-universe footer { background: #001a83; }
+/* The approved cartoon backgrounds add detail at the edges, in the poster's hue. */
+.winter-stage.fairy-books.mult-universe .scene-scenery {
+  background-image: var(--show-scene, url('assets/moonzy-night-20.webp'));
+  background-position: var(--show-position, center);
+  background-size: var(--show-size, cover);
+  opacity: var(--show-opacity, .18);
+  filter: grayscale(1) blur(3px);
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: linear-gradient(90deg, #000, transparent 32%, transparent 68%, #000), linear-gradient(transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(90deg, #000, transparent 32%, transparent 68%, #000), linear-gradient(transparent, #000 22%, #000 78%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+.mult-universe .intro, .mult-universe .story-section { --show-scene: url('assets/carevni-room-20.webp'); --show-position: right bottom; --show-size: auto 100%; --show-opacity: .32; }
+.mult-universe .heroes-section, .mult-universe .moments, .mult-universe .faq-section { --show-scene: url('assets/moonzy-night-20.webp'); --show-opacity: .3; }
+.mult-universe .video-section, .mult-universe .final-section { --show-scene: url('assets/tractor-cosmos-20.webp'); --show-opacity: .3; }
+.mult-universe .gift-section, .mult-universe .parents-section, .mult-universe .reviews-section, .mult-universe .venue-section { --show-scene: url('assets/kote-winter-house-20.webp'); --show-position: center bottom; --show-size: auto 370px; --show-opacity: .3; }
+.winter-stage.fairy-books.mult-universe .tickets-section > .scene-scenery { display: none; }
+.mult-universe .tickets-section > .poster-wash { opacity: .09; filter: blur(85px); }
+.winter-stage.fairy-books.mult-universe .scene-stars { opacity: .38; }
+.winter-stage.fairy-books.mult-universe main h2 { color: #fff; }
+.winter-stage.fairy-books.mult-universe main h2 :is(.blue, span),
+.winter-stage.fairy-books.mult-universe main .eyebrow { color: #ffcf69; }
+.mult-universe main .eyebrow::before { color: #ffcf69; }
+.winter-stage.fairy-books.mult-universe :is(.section-lead, .large-text, .center-heading > p:last-child, .cast-heading-copy > p:last-child, .gift-copy > p:not(.eyebrow), .faq-grid > div:first-child > p:not(.eyebrow), .emotion-caption, .caption-note, .fine, .booking-note) { color: var(--stage-light); }
+.mult-universe :is(.text-link, .video-caption a) { color: #ffda84; }
+.mult-universe :is(.cast-live-gallery, .photo-grid, .audience-strip) .text-link { color: #173b8b; }
+.mult-universe .hero-age-rating, .mult-universe .video-caption { color: #dce6ff; }
+.winter-stage.fairy-books.mult-universe .character h3 { color: #fff; }
+.winter-stage.fairy-books.mult-universe .character p { color: #dce6ff; }
+.mult-universe .character::before { background: linear-gradient(#f9fbff, #cbd9ff); }
+/* Reading cards stay clear and snowy; warm gold is the one accent. */
+.winter-stage.fairy-books.mult-universe .benefits article,
+.winter-stage.fairy-books.mult-universe .benefits article:nth-child(n) {
+  background: linear-gradient(145deg, #fff, #e7eeff);
+  color: #112c67;
+  border-color: #fff;
+}
+.winter-stage.fairy-books.mult-universe .benefits article::before { display: none; }
+.mult-universe .benefits h3 { color: #112c67; }
+.winter-stage.fairy-books.mult-universe .benefits p { color: #465f89; }
+.mult-universe .intro-cast .cast-art::before,
+.mult-universe .moments-cast .cast-art::before { background: radial-gradient(ellipse, #75abff50, #c7e0ff20 52%, transparent 74%); }
+.winter-stage.fairy-books.mult-universe .gift-date:nth-child(n) { background: linear-gradient(145deg, #fffef7, #e7eeff); }
+.mult-universe .gift-date:nth-child(n)::before { background: linear-gradient(#d2deff, #92b1ff); }
+.mult-universe .gift-date:nth-child(n) .day-label { background: #e3ebff; color: #244994; }
+.mult-universe .gift-date, .mult-universe .gift-steps > div, .mult-universe .faq-section details, .mult-universe .festive-visit article { color: #112c67; }
+.mult-universe .gift-date :is(p, .date-number), .mult-universe .gift-steps p { color: #112c67; }
+.winter-stage.fairy-books.mult-universe .gift-stamp { background: #0736ab; outline-color: #0736ab; }
+.mult-universe .festive-visit :is(h3, p) { color: #112c67; }
+.winter-stage.fairy-books.mult-universe .venue-invitation { background: radial-gradient(ellipse at 50% 10%, #1958cc, transparent 65%), #032993; }
+.winter-stage.fairy-books.mult-universe .faq-companions {
+  width: min(410px, 100%);
+  max-width: 410px;
+  padding: 0;
+  margin-top: 34px;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+.mult-universe .faq-companions img { filter: drop-shadow(0 13px 18px #00104b33); }
+.mult-universe .faq-section details :is(summary, p) { color: #112c67; }
+.winter-stage.fairy-books.mult-universe .company-partners { background: #edf2ff; }
+.mult-universe .company-partners .blue { color: #0736ab; }
+.mult-universe .company-partners .eyebrow { color: #4a659b; }
+/* Each introductory thesis has its own line and its own large visual cue. */
+.mult-universe .adventure-theses { list-style: none; padding: 0; margin: 30px 0 22px; display: grid; gap: 16px; }
+.mult-universe .adventure-theses li { display: grid; grid-template-columns: 68px minmax(0, 1fr); gap: 18px; align-items: center; font-size: clamp(20px, 1.8vw, 26px); font-weight: 900; line-height: 1.35; }
+.mult-universe .thesis-icon { display: grid; place-items: center; width: 68px; height: 68px; background: linear-gradient(145deg, #fff4ce, #fff); border: 1px solid #fff7de; border-radius: 22px; box-shadow: 0 8px 22px #000c4b26; }
+.mult-universe .thesis-icon img { width: 50px; height: 50px; }
+.mult-universe .adventure-invitation { color: #dce6ff; max-width: 640px; font-size: 18px; line-height: 1.6; }
+/* Ticket typography increases by 30%, with room for the larger lettering. */
+.winter-stage.fairy-books.mult-universe .nav > .buy-cta { font-size: 19.5px; min-height: 53px; padding: 13px 23px; }
+.winter-stage.fairy-books.mult-universe .hero-booking-actions > .buy-cta { font-size: 24.7px; min-height: 72px; padding: 18px 30px; }
+.winter-stage.fairy-books.mult-universe .date-card .buy-cta { font-size: 20.8px; min-height: 63px; padding: 17px 19px; }
+.winter-stage.fairy-books.mult-universe .final-inner .buy-cta { font-size: 23.4px; min-height: 68px; }
+.winter-stage.fairy-books.mult-universe .mobile-buy .buy-cta { font-size: 19.5px; min-height: 57px; padding: 13px 19px; white-space: normal; line-height: 1.15; }
+.mult-universe .mobile-buy { background: #edf2ff; }
+/* The original gold bow is now a show-branded ornament everywhere. */
+.mult-universe .universe-ornament { position: absolute; z-index: 0; width: 230px; top: 30%; pointer-events: none; opacity: .72; filter: drop-shadow(0 8px 15px #00084940); }
+.mult-universe .universe-ornament img { display: block; width: 100%; height: auto; }
+.mult-universe .universe-ornament.left { left: -80px; transform: rotate(-12deg); }
+.mult-universe .universe-ornament.right { right: -80px; transform: rotate(12deg); }
+.winter-stage.fairy-books.mult-universe .holiday-wing { background-image: none; }
+.mult-universe .book-garland img:nth-child(n) { width: 150px; height: 187px; top: -30px; }
+.mult-universe .book-garland img:nth-child(2) { width: 130px; height: 162px; top: -20px; }
+.mult-universe .venue-garland img { width: 130px; height: 162px; }
+.mult-universe .book-gift-detail { width: 115px; }
+/* Stage photography replaces repeated reactions without obscuring the action. */
+.mult-universe .stage-emotion img { height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
+.mult-universe .stage-emotion figcaption { color: #112c67; }
+.mult-universe .stage-strip img { height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.mult-universe .stage-strip figcaption { color: #112c67; font-size: 18px; }
+@media (min-width: 1500px) {
+  .mult-universe .universe-ornament { width: 285px; }
+  .mult-universe .universe-ornament.left { left: -50px; }
+  .mult-universe .universe-ornament.right { right: -50px; }
+  .mult-universe .book-garland img:nth-child(n) { width: 180px; height: 225px; top: -46px; }
+  .mult-universe .book-garland img:nth-child(2) { width: 150px; height: 187px; top: -35px; }
+}
+@media (min-width: 2100px) {
+  .mult-universe .universe-ornament.left { left: calc((100vw - 1520px) / 4 - 95px); }
+  .mult-universe .universe-ornament.right { right: calc((100vw - 1520px) / 4 - 95px); }
+}
+@media (max-width: 1100px) {
+  .mult-universe .universe-ornament { display: none; }
+  .winter-stage.fairy-books.mult-universe .nav > .buy-cta { font-size: 18.2px; }
+  .winter-stage.fairy-books.mult-universe .hero-booking-actions > .buy-cta { font-size: 22.1px; }
+  .winter-stage.fairy-books.mult-universe .date-card .buy-cta { font-size: 18.2px; }
+}
+@media (max-width: 800px) {
+  .winter-stage.fairy-books.mult-universe .date-card .buy-cta { font-size: 20.8px; }
+  .mult-universe .book-garland img:nth-child(2) { display: none; }
+  .mult-universe .adventure-theses li { grid-template-columns: 60px minmax(0, 1fr); gap: 15px; font-size: 22px; }
+  .mult-universe .thesis-icon { width: 60px; height: 60px; border-radius: 20px; }
+  .mult-universe .thesis-icon img { width: 46px; height: 46px; }
+}
+@media (max-width: 560px) {
+  body.mult-universe { padding-bottom: calc(112px + env(safe-area-inset-bottom)); }
+  .mult-universe .poster-wash { inset: -32px; filter: blur(38px); opacity: .16; }
+  .winter-stage.fairy-books.mult-universe .scene-scenery { opacity: .2; background-size: var(--show-size, auto 100%); }
+  .mult-universe .adventure-theses { gap: 18px; margin-top: 24px; }
+  .mult-universe .adventure-theses li { font-size: 21px; }
+  .mult-universe .adventure-invitation { font-size: 16px; }
+  .winter-stage.fairy-books.mult-universe .hero-booking-actions > .buy-cta { width: min(360px, 100%); min-width: 0; font-size: 23.4px; min-height: 68px; }
+  .winter-stage.fairy-books.mult-universe .mobile-buy { gap: 12px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); }
+  .mult-universe .mobile-buy > span { flex: 1 1 0; min-width: 0; }
+  .winter-stage.fairy-books.mult-universe .mobile-buy .buy-cta { flex: 0 1 170px; }
+  .mult-universe .book-garland img:nth-child(n) { width: 120px; height: 150px; top: -21px; }
+  .mult-universe .book-garland img:nth-child(1) { left: -22px; }
+  .mult-universe .book-garland img:nth-child(3) { right: -22px; }
+  .mult-universe .venue-garland img { width: 113px; height: 141px; right: 5px; }
+  .mult-universe .stage-strip figcaption { font-size: 17px; }
+  .winter-stage.fairy-books.mult-universe .faq-companions { width: min(350px, 100%); margin-top: 30px; }
+}
+@media (max-width: 360px) {
+  .winter-stage.fairy-books.mult-universe .mobile-buy .buy-cta { font-size: 18.2px; flex-basis: 150px; padding-inline: 13px; }
+  .mult-universe .adventure-theses li { font-size: 20px; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; }
+  .mult-universe .thesis-icon { width: 56px; height: 56px; }
+}
