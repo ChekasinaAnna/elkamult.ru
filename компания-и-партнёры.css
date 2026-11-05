@@ -1,0 +1,217 @@
+/* Цвета, типографика и белые карточки из принятых блоков сайта. */
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners {
+  position: relative;
+  isolation: isolate;
+  padding: 72px 0 88px;
+  background: #eaf5ff;
+  color: #173665;
+  scroll-margin-top: 100px;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners > :is(.poster-wash, .scene-stitch),
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners::before,
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners::after { display: none; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners > .wrap {
+  position: relative;
+  z-index: 1;
+  width: min(1248px, calc(100% - 96px));
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-signature {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 64px;
+  padding: 0 0 40px;
+  border-bottom: 1px solid #cfdeef;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+  padding: 32px;
+  border: 0;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: none;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-logo img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-signature > div:last-child { min-width: 0; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .eyebrow {
+  margin: 0 0 18px;
+  color: #2d4770;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: .7px;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-principle {
+  margin: 0;
+  color: #173665;
+  font-family: var(--font);
+  font-size: clamp(30px, 2.8vw, 40px);
+  font-weight: 1000;
+  line-height: 1.16;
+  letter-spacing: -1px;
+  text-shadow: none;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-principle .blue { color: #143cab; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-light-statement {
+  max-width: 650px;
+  margin: 20px 0 0;
+  color: #50647e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-light-statement strong { color: #143cab; font-weight: 900; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners h3 {
+  margin: 0 0 20px;
+  color: #173665;
+  font-family: var(--font);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -.4px;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .partner-group { margin-top: 36px; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .partner-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: none;
+  margin: 0;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(.partner-logo-card, .rights-logo-card) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 140px;
+  padding: 24px 28px;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: none;
+  transform: none;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(.partner-logo-card, .rights-logo-card) img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: 88px;
+  object-fit: contain;
+  filter: none;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .qbrix-partner img { max-width: 210px; }
+
+/* Белые карточки партнёров, включая состояния наведения. */
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .partner-group .partner-logo-card {
+  background: #fff;
+  border-color: #fff;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .partner-group a.partner-logo-card:hover {
+  background: #fff;
+  border-color: #143cab;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .partner-group div.partner-logo-card:hover {
+  border-color: #fff;
+}
+
+/* У исходного Галамарта белый фон внутри файла: сохраняем его аккуратной подложкой. */
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .partner-group img[src$="partner-galamart.png"] {
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .brand-support-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .rights-brands { grid-column: span 3; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .brand-support-row h3 {
+  display: flex;
+  align-items: end;
+  min-height: 56px;
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .rights-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .rights-logo-card { min-height: 124px; padding: 22px 24px; }
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .rights-logo-card img { max-width: 200px; height: 78px; }
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .media-brand { max-width: none; }
+
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(div.partner-logo-card:hover, div.rights-logo-card:hover) { border-color: #fff; }
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(a.partner-logo-card, a.rights-logo-card) { transition: border-color .2s ease; }
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(a.partner-logo-card:hover, a.rights-logo-card:hover) { border-color: #143cab; }
+body.winter-stage.fairy-books.mult-universe.artful-scenes #partners a:focus-visible { outline: 3px solid #143cab; outline-offset: 4px; }
+
+@media (max-width: 1100px) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-signature { gap: 36px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-logo { min-height: 180px; padding: 24px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .brand-support-row { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .rights-brands { grid-column: auto; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .brand-support-row h3 { min-height: 0; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .media-brand { max-width: 360px; }
+}
+
+@media (max-width: 700px) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners { padding: 56px 0 64px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners > .wrap { width: calc(100% - 40px); }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-signature { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-bottom: 32px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-logo { width: min(430px, 100%); min-height: 150px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-principle { font-size: clamp(28px, 7.2vw, 36px); letter-spacing: -.7px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .company-light-statement { font-size: 18px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners h3 { font-size: 24px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(.partner-logo-grid, .rights-logo-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(.partner-logo-card, .rights-logo-card) { min-height: 118px; padding: 20px 16px; border-radius: 20px; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(.partner-logo-card, .rights-logo-card) img { height: 76px; }
+}
+
+@media (max-width: 400px) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(.partner-logo-grid, .rights-logo-grid) { grid-template-columns: minmax(0, 1fr); }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners .media-brand { max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #partners :is(a.partner-logo-card, a.rights-logo-card) { transition: none; }
+}

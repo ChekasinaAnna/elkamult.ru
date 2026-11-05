@@ -1,0 +1,156 @@
+/* Winter stage: original MULT artwork, quiet copy zones, warm theatrical light. */
+.winter-stage{--ink:#143569;--muted:#506c91;--gold:#fdb933;--night:#061632;--blue:#1168b8;background:#eaf6ff}
+.winter-stage h2{letter-spacing:-.035em;text-wrap:balance;line-height:1.1}
+.winter-stage h3{letter-spacing:-.02em;text-wrap:balance}
+.winter-stage .section{padding-top:100px;padding-bottom:100px}
+.winter-stage .section-lead,.winter-stage .large-text{line-height:1.65}
+.winter-stage .header{background:#071b3af2;border-bottom:1px solid #b9dfff24;box-shadow:0 8px 25px #0616321a;backdrop-filter:blur(14px)}
+.winter-stage .show-location{background:#0a284e;color:#e2f3ff;letter-spacing:.065em;border-bottom:1px solid #fff2bb28}
+.winter-stage .button{background:linear-gradient(165deg,#fff0ad 0%,#ffce62 38%,#fdb933 80%);color:#123263;border:1px solid #ffeeb3;box-shadow:0 4px 0 #c88c22,0 10px 26px #ffc04e20;font-weight:1000;transition:transform .2s ease,box-shadow .2s ease}
+.winter-stage .button:hover{transform:translateY(-3px);box-shadow:0 7px 0 #c88c22,0 17px 35px #ffc04e28}
+.winter-stage .button:focus-visible,.winter-stage .watch-link:focus-visible{outline:3px solid #50bcf5;outline-offset:6px}
+.winter-stage .eyebrow{display:inline-flex;align-items:center;gap:10px;letter-spacing:.115em;font-size:12px;font-weight:900}
+.winter-stage .eyebrow::before{content:"✦";font-size:17px;line-height:1;color:#c78e2a;flex-shrink:0}
+.winter-stage .blue{color:#0d6ab6}
+.winter-stage .ribbon{background:linear-gradient(90deg,#f5ad30,#ffe1a1 50%,#f5ad30);color:#163d70;border-block:1px solid #fff0c8;box-shadow:none}
+.winter-stage .ribbon span{color:#b77b13}
+/* Decorative layers never intercept a control or compete with readable text. */
+.winter-stage .scene-scenery,.winter-stage .scene-stars{position:absolute;pointer-events:none;z-index:0;inset:0}
+.winter-stage .scene-scenery{background-repeat:no-repeat;background-position:center bottom;background-size:cover}
+.winter-stage .scene-stars{background-image:url('assets/winter-wishes.svg');background-repeat:repeat;background-size:1440px 900px;opacity:.32;mask-image:linear-gradient(90deg,#000,transparent 28%,transparent 72%,#000)}
+.winter-stage .scene-scenery.fairy-night{background-image:url('assets/sp-background-10.webp');mask-image:linear-gradient(to bottom,transparent 3%,#000 60%,#000)}
+.winter-stage .scene-scenery.fairy-day{background-image:url('assets/sp-background-10.webp');mask-image:linear-gradient(to bottom,transparent,#000 66%)}
+.winter-stage .holiday-wing{background-image:url('assets/winter-jewels.svg');background-repeat:no-repeat;background-size:100% auto;top:0;bottom:0;opacity:.8;animation:none;mask-image:linear-gradient(to right,#000 65%,transparent)}
+.winter-stage .holiday-wing-right{top:80px}
+.winter-stage .poster-hero{background:radial-gradient(ellipse at 50% 15%,#266caa,#082b54 60%,#071b3a);padding-bottom:0}
+.winter-stage .poster-hero>.scene-scenery{opacity:.17;background-size:auto 100%;mask-image:linear-gradient(to right,#000,transparent 22%,transparent 78%,#000)}
+.winter-stage .poster-hero>.scene-stars{opacity:.75}
+.winter-stage .poster-hero .key-art{box-shadow:0 0 100px #72c4ef35,0 30px 60px #04112c40}
+.winter-stage .hero-booking.hero-booking-centered{gap:31px;padding-top:43px;padding-bottom:35px}
+.winter-stage .hero-booking-centered .show-facts b{color:#ffcf69;text-shadow:0 0 35px #ffc55c28}
+.winter-stage .hero-booking-centered .fact-unit{color:#ffcf69}
+.winter-stage .hero-booking-centered .hero-booking-actions>.button{min-width:300px}
+.winter-stage .hero-age-rating{color:#c1d9ed}
+/* Snowy daylight is the entrance to the children's adventure. */
+.winter-stage .intro{background:radial-gradient(ellipse at 70% 15%,#fffdf4,transparent 60%),linear-gradient(#edf7ff,#ddecf9)}
+.winter-stage .intro::before{display:none}
+.winter-stage .intro>.scene-scenery{opacity:.73;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 18%,#000 75%)}
+.winter-stage .intro>.scene-stars{opacity:.2}
+.winter-stage .cast-heading-copy>p:last-child{max-width:710px}
+.winter-stage .section-heading.cast-heading{grid-template-columns:minmax(0,1fr) 345px;gap:55px}
+.winter-stage .cast-art{height:345px}
+.winter-stage .cast-art img{filter:drop-shadow(0 18px 18px #15376822)}
+.winter-stage .intro-cast .cast-art::before,.winter-stage .moments-cast .cast-art::before{inset:4% -8%;background:radial-gradient(ellipse,#fff4c177,#bfdef066 55%,transparent 72%)}
+.winter-stage .benefits{gap:20px;position:relative}
+.winter-stage .benefits article{padding:30px 25px 32px;background:linear-gradient(145deg,#fffefaed,#f2f9ffeb);border:1px solid #fff;border-radius:32px 32px 22px 22px;box-shadow:0 12px 32px #25496715;transform:none!important}
+.winter-stage .benefits article:nth-child(2){background:linear-gradient(145deg,#fff9e5f2,#fffefaed)}
+.winter-stage .benefits article:nth-child(3){background:linear-gradient(145deg,#f3edfff2,#fffefaed)}
+.winter-stage .benefits article:nth-child(4){background:linear-gradient(145deg,#eaf9f6f2,#fffefaed)}
+.winter-stage .benefits article::after{color:#d39b39;opacity:.8}
+.winter-stage .infographic-icon{width:88px;height:88px;border-radius:28px;background:#ffffffb3;box-shadow:0 6px 20px #30587c10;border:1px solid #fff;transform:rotate(-5deg)}
+.winter-stage .infographic-icon img{width:59px;height:59px;transform:rotate(5deg)}
+.winter-stage .benefits h3{font-size:24px;line-height:1.2}
+.winter-stage .benefits p{color:#4c6585;font-size:16px}
+/* Night sections feel like one illuminated stage. */
+.winter-stage .video-section,.winter-stage .story-section,.winter-stage .tickets-section,.winter-stage .final-section,.winter-stage .parents-section{background:radial-gradient(ellipse at 16% 34%,#173f75 0,transparent 48%),radial-gradient(ellipse at 95% 78%,#15446f 0,transparent 50%),#071b3a;color:#f8fcff}
+.winter-stage .video-section{padding-top:175px;padding-bottom:100px}
+.winter-stage .video-section>.scene-scenery,.winter-stage .story-section>.scene-scenery,.winter-stage .final-section>.scene-scenery{opacity:.11;mask-image:linear-gradient(to bottom,transparent 20%,#000 75%)}
+.winter-stage .video-section>.scene-stars,.winter-stage .story-section>.scene-stars,.winter-stage .tickets-section>.scene-stars,.winter-stage .final-section>.scene-stars,.winter-stage .parents-section>.scene-stars{opacity:.8}
+.winter-stage .video-section h2 span,.winter-stage .story-copy h2 span,.winter-stage .final-inner h2 span,.winter-stage .parents-section h2 .blue,.winter-stage .tickets-section h2 .blue{color:#ffcf69}
+.winter-stage .video-section .eyebrow,.winter-stage .story-section .eyebrow,.winter-stage .final-section .eyebrow,.winter-stage .parents-section .eyebrow,.winter-stage .tickets-section .eyebrow{color:#b9ddfa}
+.winter-stage .video-section .eyebrow::before,.winter-stage .story-section .eyebrow::before,.winter-stage .final-section .eyebrow::before,.winter-stage .parents-section .eyebrow::before,.winter-stage .tickets-section .eyebrow::before{color:#ffcf69}
+.winter-stage .video-cast .cast-art{height:340px}
+.winter-stage .video-cast .cast-art img{filter:drop-shadow(0 0 40px #9ed8ff44)}
+.winter-stage .video-section .cast-heading-copy>p:last-child,.winter-stage .parents-heading>p:last-child,.winter-stage .ticket-cast .cast-heading-copy>p:last-child,.winter-stage .story-copy p:not(.eyebrow){color:#d5e7fa}
+.winter-stage .video-frame{border:1px solid #a6d7f466;background:#092d58;padding:9px;transform:none;box-shadow:0 24px 55px #020c225e,0 0 55px #65bbf41c}
+.winter-stage .video-frame video{display:block}
+.winter-stage .video-caption{color:#c6deee}
+.winter-stage .video-caption a{color:#ffcf69}
+.winter-stage .festive-canopy{opacity:.85}
+/* Original characters stand on small snowy stages, rather than inside cards. */
+.winter-stage .heroes-section{background:radial-gradient(ellipse at 50% 20%,#fffef5 0,transparent 65%),#e9f4fd}
+.winter-stage .heroes-section::before{display:none}
+.winter-stage .heroes-section>.scene-scenery{opacity:.55;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 20%,#000 66%)}
+.winter-stage .heroes{grid-template-columns:repeat(4,minmax(0,1fr));gap:25px;padding-top:18px}
+.winter-stage .character,.winter-stage .character:nth-child(even){display:block;min-height:0;text-align:center;background:none;border:0;box-shadow:none;border-radius:0;padding:0 6px 20px;isolation:isolate}
+.winter-stage .character::before{content:"";position:absolute;left:3%;right:3%;top:240px;height:60px;background:linear-gradient(#fffef7,#deedf7);border-radius:50%;box-shadow:0 13px 22px #2652761f,0 0 35px #fff4cd99;z-index:-1}
+.winter-stage .character-image{height:305px;margin:0 0 5px}
+.winter-stage .character-copy{padding:0}
+.winter-stage .character img{filter:drop-shadow(0 14px 12px #1c447f22)}
+.winter-stage .character h3{font-size:29px;line-height:1.1;color:#183b6d}
+.winter-stage .character p{font-size:16px;line-height:1.45;color:#476685;max-width:230px;margin:10px auto 0}
+.winter-stage .cast-live-gallery figure,.winter-stage .live-moments figure,.winter-stage .photo-grid figure,.winter-stage .audience-strip figure,.winter-stage .review-emotion,.winter-stage .final-emotion{box-shadow:0 14px 38px #0c244e1c}
+.winter-stage .cast-live-gallery figure{border-width:6px;border-radius:25px;background:#fffef8}
+.winter-stage .cast-live-gallery figcaption{color:#264b75;background:#fffef8;line-height:1.45}
+.winter-stage .parents-section>.scene-scenery{opacity:.15;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 0,#000 80%)}
+.winter-stage .parents-heading{max-width:950px}
+.winter-stage .parents-heading>p:last-child{max-width:760px}
+.winter-stage .parents-section .live-moments{gap:30px}
+.winter-stage .parents-section .live-moments figure{border:1px solid #9ac7e05e;box-shadow:0 17px 35px #000b2050}
+.winter-stage .parents-section .live-moments figcaption{padding:50px 25px 22px;font-size:21px}
+.winter-stage .parents-section .emotion-caption{color:#b0cbe3}
+.winter-stage .story-section{padding-top:65px;padding-bottom:80px}
+.winter-stage .story-art{background:radial-gradient(circle,#71c2fa32 0,transparent 63%)}
+.winter-stage .story-art::after{content:"";position:absolute;inset:4%;border:1px solid #ffd07638;border-radius:50%;box-shadow:0 0 60px #65beff20,inset 0 0 35px #a3e0ff14;z-index:-1}
+.winter-stage .story-copy h2{font-size:clamp(44px,4.2vw,62px)}
+/* Real children's emotions carry the light between scenes. */
+.winter-stage .moments{background:linear-gradient(#fff9ed,#f3f9ff 45%,#e5f1fa)}
+.winter-stage .moments>.scene-scenery{opacity:.5;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 18%,#000 70%)}
+.winter-stage .photo-grid figure{background:#fffef8;border-color:#fffef8}
+.winter-stage .photo-grid figcaption{color:#1c4273;font-size:17px}
+.winter-stage .tickets-section{padding-top:175px}
+.winter-stage .tickets-section::before{display:none}
+.winter-stage .tickets-section>.scene-scenery{opacity:.18;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 30%,#000 80%)}
+.winter-stage .ticket-cast{grid-template-columns:minmax(0,1fr) 320px!important;gap:40px;text-align:left}
+.winter-stage .ticket-cast .tractor-guide{height:305px}
+.winter-stage .gift-date{border:1px solid #fff2c5;box-shadow:0 7px 0 #d3e2ef,0 25px 45px #020b2459;background:linear-gradient(140deg,#fffef6,#eef8ff)}
+.winter-stage .gift-date:nth-child(2){background:linear-gradient(140deg,#fffef6,#f2eaff)}
+.winter-stage .gift-date:nth-child(3){background:linear-gradient(140deg,#fffef6,#e7f6f1)}
+.winter-stage .gift-date::after{display:none}
+.winter-stage .gift-date::before{box-shadow:0 5px 0 #04163322}
+.winter-stage .gift-date .date-number{color:#143c73}
+.winter-stage .gift-date p{color:#506983}
+.winter-stage .booking-note{color:#b9d0e7;font-size:15px}
+.winter-stage .gift-section{background:radial-gradient(ellipse at 35% 20%,#fff5d4 0,transparent 65%),#eaf6ff}
+.winter-stage .gift-section::before{display:none}
+.winter-stage .gift-section>.scene-scenery{opacity:.5;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 20%,#000 80%)}
+.winter-stage .gift-visual{border:1px solid #fff;background:linear-gradient(135deg,#fffdf2ee,#ffffffdc);box-shadow:0 23px 55px #23496b15;padding:29px;border-radius:40px}
+.winter-stage .gift-visual::before{content:"";position:absolute;inset:-20px;border:1px solid #cca3564a;border-radius:49%;pointer-events:none;z-index:-1}
+.winter-stage .gift-copy h2 .blue{color:#bb7618}
+.winter-stage .gift-stamp{background:#123d75;outline-color:#123d75;border-color:#ffc968;color:#fff2c6}
+.winter-stage .gift-steps>div{background:#ffffffbc;border-color:#fff}
+.winter-stage .reviews-section{background:linear-gradient(#f4f9ff,#e8f2fc)}
+.winter-stage .reviews-section>.scene-scenery{opacity:.45;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 45%,#000 90%)}
+.winter-stage .review-video{background:#fffdf6;box-shadow:0 19px 38px #19375726;transform:none}
+.winter-stage .producer-section{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 25% 40%,#224e7a,transparent 60%),#0a2145}
+.winter-stage .producer-section>.wrap{position:relative;z-index:1}
+.winter-stage .producer-section>.scene-stars{opacity:.6}
+.winter-stage .producer-grid blockquote{color:#e2edf9}
+.winter-stage .venue-section{background:radial-gradient(ellipse at 0 40%,#fff5da,transparent 65%),#eaf6ff;isolation:isolate}
+.winter-stage .venue-section>.wrap{position:relative;z-index:1}
+.winter-stage .venue-section>.scene-scenery{opacity:.45;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 20%,#000 80%)}
+.winter-stage .venue-invitation{background:radial-gradient(ellipse at 20% 30%,#1b5d92,transparent 70%),#092b55;border:1px solid #aacdea;box-shadow:0 15px 32px #16375624}
+.winter-stage .venue-invitation h2 span{color:#ffcf69}
+.winter-stage .festive-visit article{box-shadow:0 8px 25px #23466b12}
+.winter-stage .faq-section{background:linear-gradient(#eff7ff,#e3eff8)}
+.winter-stage .faq-section>.scene-scenery{opacity:.5;background-size:100% auto;mask-image:linear-gradient(to bottom,transparent 25%,#000 80%)}
+.winter-stage .faq-companions{background:#fffef8;border-color:#fffef8}
+.winter-stage .faq-section details{background:#fffdf9e8;border:1px solid #fff;border-radius:18px;margin-bottom:12px;padding:0 22px}
+.winter-stage .faq-section summary{font-size:19px}
+.winter-stage .final-section{padding-top:0}
+.winter-stage .final-inner{position:relative;z-index:1}
+.winter-stage .final-emotion{border-color:#ffffffb3;background:#ffffff;border-radius:28px;transform:none;box-shadow:0 22px 48px #000d274d,0 0 45px #ffd47314}
+.winter-stage .final-inner h2{font-size:clamp(39px,3.5vw,58px)}
+.winter-stage .company-partners{background:#fffef8}
+.winter-stage .partner-logo-card,.winter-stage .rights-logo-card,.winter-stage .company-logo{border-color:#e0e8ec;background:#fff;box-shadow:0 10px 22px #2944630b}
+.winter-stage footer{background:#071b3a}
+.winter-stage .mobile-buy{background:#fffdf5;border-top:1px solid #dce5ed}
+@media(min-width:1500px){.winter-stage .section{padding-block:115px}.winter-stage .video-section,.winter-stage .tickets-section{padding-top:195px}.winter-stage .section-heading.cast-heading{grid-template-columns:minmax(0,1fr) 390px;gap:70px}.winter-stage .cast-art{height:385px}.winter-stage .video-cast .cast-art{height:385px}.winter-stage .character-image{height:355px}.winter-stage .character::before{top:290px}.winter-stage .holiday-wing{width:clamp(175px,calc((100vw - 1380px)/2 + 65px),400px)}.winter-stage .ticket-cast{grid-template-columns:minmax(0,1fr) 350px!important}.winter-stage .ticket-cast .tractor-guide{height:330px}}
+@media(min-width:2100px){.winter-stage .scene-scenery{background-size:100% auto}.winter-stage .poster-hero>.scene-scenery{background-size:cover}.winter-stage .holiday-wing{width:clamp(300px,calc((100vw - 1520px)/2 + 65px),550px)}}
+@media(max-width:1100px){.winter-stage .section{padding-block:80px}.winter-stage .section-heading.cast-heading{grid-template-columns:minmax(0,1fr) 280px;gap:32px}.winter-stage .cast-art,.winter-stage .video-cast .cast-art{height:300px}.winter-stage .video-section,.winter-stage .tickets-section{padding-top:165px}.winter-stage .hero-booking.hero-booking-centered{padding-top:34px;padding-bottom:30px}.winter-stage .ticket-cast{grid-template-columns:minmax(0,1fr) 270px!important}.winter-stage .ticket-cast .tractor-guide{height:260px}.winter-stage .character-image{height:245px}.winter-stage .character::before{top:190px}.winter-stage .character h3{font-size:25px}.winter-stage .character p{font-size:15px}.winter-stage .story-copy h2{font-size:45px}}
+@media(max-width:800px){.winter-stage .section{padding-block:65px}.winter-stage .video-section,.winter-stage .tickets-section{padding-top:160px}.winter-stage .section-heading.cast-heading{grid-template-columns:minmax(0,1fr) 220px;gap:24px}.winter-stage .cast-art,.winter-stage .video-cast .cast-art{height:260px}.winter-stage .heroes{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 24px}.winter-stage .character-image{height:280px}.winter-stage .character::before{top:225px}.winter-stage .ticket-cast{grid-template-columns:minmax(0,1fr) 220px!important;gap:22px}.winter-stage .ticket-cast .tractor-guide{height:230px}.winter-stage .parents-section .live-moments{gap:22px}.winter-stage .parents-section .live-moments figcaption{font-size:18px}.winter-stage .story-section{padding-top:40px;padding-bottom:65px}.winter-stage .story-copy h2{font-size:42px}.winter-stage .benefits h3{font-size:23px}}
+@media(max-width:560px){.winter-stage .section{padding-block:56px}.winter-stage .video-section,.winter-stage .tickets-section{padding-top:148px;padding-bottom:60px}.winter-stage .scene-stars{background-size:900px 563px;mask-image:linear-gradient(90deg,#000,transparent 20%,transparent 80%,#000);opacity:.25}.winter-stage .scene-scenery.fairy-night,.winter-stage .scene-scenery.fairy-day{background-size:auto 340px;background-position:center bottom}.winter-stage .poster-hero>.scene-scenery{display:none}.winter-stage .poster-hero>.scene-stars{opacity:.4}.winter-stage .holiday-wing{display:none}.winter-stage .hero-booking.hero-booking-centered{padding-top:29px;padding-bottom:29px;gap:26px}.winter-stage .hero-booking-centered .hero-booking-actions>.button{min-width:0}.winter-stage .eyebrow{font-size:10px;letter-spacing:.07em;gap:7px}.winter-stage .eyebrow::before{font-size:14px}.winter-stage .section-heading.cast-heading{grid-template-columns:1fr;gap:18px;margin-bottom:31px}.winter-stage .cast-art{width:250px;height:260px}.winter-stage .video-cast .cast-art{width:265px;height:270px}.winter-stage .intro>.scene-scenery{opacity:.68}.winter-stage .benefits{gap:16px}.winter-stage .benefits article{grid-template-columns:64px minmax(0,1fr);gap:0 18px;padding:23px 19px;border-radius:25px}.winter-stage .infographic-icon{width:64px;height:72px;border-radius:22px;margin:0}.winter-stage .infographic-icon img{width:49px;height:49px}.winter-stage .benefits h3{font-size:22px;padding-right:7px}.winter-stage .benefits p{font-size:16px}.winter-stage .character-image{height:220px}.winter-stage .character::before{top:176px;height:44px;left:0;right:0}.winter-stage .character h3{font-size:24px}.winter-stage .character p{font-size:14px}.winter-stage .heroes{gap:29px 12px}.winter-stage .character{padding:0 2px 14px}.winter-stage .parents-heading h2{font-size:35px}.winter-stage .parents-section .live-moments figcaption{padding:40px 18px 17px;font-size:18px}.winter-stage .story-section{padding-top:25px;padding-bottom:55px}.winter-stage .story-copy h2{font-size:39px}.winter-stage .photo-grid figcaption{font-size:15px}.winter-stage .ticket-cast{grid-template-columns:1fr!important;text-align:left;gap:14px}.winter-stage .ticket-cast .tractor-guide{width:240px;height:235px}.winter-stage .gift-visual{padding:22px;border-radius:32px}.winter-stage .gift-visual::before{inset:-12px}.winter-stage .gift-stamp{left:-7px}.winter-stage .faq-section details{padding:0 17px}.winter-stage .faq-section summary{font-size:17px}.winter-stage .final-inner h2{font-size:37px}.winter-stage .final-section>.scene-scenery{opacity:.13}.winter-stage .venue-invitation{border-radius:28px}}
+@media(max-width:360px){.winter-stage .character-image{height:185px}.winter-stage .character::before{top:144px;height:40px}.winter-stage .character h3{font-size:22px}.winter-stage .benefits article{gap:0 14px;padding-inline:16px}.winter-stage .benefits h3{font-size:20px}.winter-stage .story-copy h2{font-size:35px}.winter-stage .final-inner h2{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.winter-stage .button,.winter-stage .character img{transition:none}.winter-stage .button:hover{transform:none}}
+.winter-stage .video-section::before,.winter-stage .story-section::before,.winter-stage .final-section::before{display:none}
+@media(prefers-reduced-motion:no-preference) and (min-width:801px){.winter-stage .scene-stars{animation:winter-breathe 9s ease-in-out infinite alternate}@keyframes winter-breathe{from{filter:brightness(.88)}to{filter:brightness(1.15)}}}

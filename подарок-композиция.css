@@ -1,0 +1,282 @@
+/* Подарок: голубой фон из предыдущих блоков, мешок и связанная группа действий. */
+.gift-link-note { display: none; }
+
+@media (min-width: 1101px) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift {
+    --scene-base: #edf7ff;
+    padding: 96px 0 80px;
+    background: #edf7ff;
+    isolation: isolate;
+    scroll-margin-top: 112px;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift::before,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift::after,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift > :is(.brand-forms, .poster-wash, .scene-scenery, .scene-stars, .scene-stitch),
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-stamp,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .book-gift-detail,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-action .cast-art {
+    display: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-heading {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-heading .eyebrow {
+    margin: 0 0 18px;
+    color: #416187;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-heading h2 {
+    margin: 0;
+    color: #1559a3;
+    font-size: clamp(40px, 3.34vw, 48px);
+    line-height: 1.14;
+    text-wrap: balance;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-heading h2 span {
+    color: #173665;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 64px;
+    align-items: center;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-visual {
+    width: 100%;
+    max-width: 520px;
+    min-width: 0;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-view {
+    width: 100%;
+    aspect-ratio: 826.5 / 856.8;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    overflow: hidden;
+    scale: 1;
+    rotate: 0deg;
+    transform: none;
+    animation: none;
+    transition: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-view img {
+    display: block;
+    position: absolute;
+    width: 180%;
+    max-width: none;
+    height: auto;
+    top: 0;
+    left: 2.8%;
+    clip-path: inset(0 50% 0 0);
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-view[data-side="back"] img {
+    /* Снимок сзади смещён в исходнике на 38 px. Совмещаем оси мешка. */
+    left: -83.062%;
+    clip-path: inset(0 0 0 50%);
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 232px;
+    margin: 8px 0 0;
+    margin-inline: auto;
+    padding: 3px;
+    gap: 0;
+    border: 0;
+    border-radius: 13px;
+    background: #dce9f4;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    width: calc((100% - 6px) / 2);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 4px #17366526;
+    transition: transform .18s ease;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls:has([data-bag-side="back"].active)::before {
+    transform: translateX(100%);
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls button {
+    min-width: 0;
+    min-height: 40px;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #416187;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 800;
+    box-shadow: none;
+    transform: none;
+    transition: color .18s ease;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls button.active {
+    background: transparent;
+    color: #173665;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls button:hover {
+    color: #173665;
+    box-shadow: none;
+    transform: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-caption {
+    margin: 12px 0 0;
+    color: #50647e;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-copy {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-contents-heading {
+    order: 0;
+    margin: 0 0 24px;
+    color: #173665;
+    font-size: clamp(24px, 1.95vw, 28px);
+    line-height: 1.25;
+    text-wrap: pretty;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-contents {
+    order: 1;
+    margin: 0;
+    gap: 18px;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-contents li {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 12px;
+    color: #173665;
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-contents li::before {
+    width: 36px;
+    height: 36px;
+    background: url('assets/значок-подарок-59.svg') center / contain no-repeat;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-coupon-tip {
+    order: 4;
+    max-width: 560px;
+    margin: 20px 0 0;
+    padding: 12px 18px;
+    border-left: 3px solid #fdb933;
+    border-radius: 0 14px 14px 0;
+    background: linear-gradient(90deg, #fff0c9e6, #fff4d580 72%, #fff4d500);
+    color: #173665;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 800;
+    white-space: normal;
+    text-wrap: balance;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-action {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    min-height: 0;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-action .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-height: 54px;
+    padding: 14px 28px;
+    border: 0;
+    border-radius: 14px;
+    color: #102c6e;
+    background: #fdb933;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-action .button:hover {
+    background: #ffce61;
+    box-shadow: none;
+    transform: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-copy > .fine {
+    order: 3;
+    max-width: 560px;
+    margin: 16px 0 0;
+    color: #50647e;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .gift-fine-current {
+    display: block;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift :is(.gift-action .button, .bag-controls button):focus-visible {
+    outline: 3px solid #185bb4;
+    outline-offset: 4px;
+  }
+}
+
+@media (min-width: 1101px) and (prefers-reduced-motion: reduce) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls::before,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #gift .bag-controls button {
+    transition: none;
+  }
+}

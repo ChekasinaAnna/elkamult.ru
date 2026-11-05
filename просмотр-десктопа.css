@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; }
+body { --notice-height: 0px; overflow: hidden; background: #001a83; color: #173665; font-family: system-ui, sans-serif; }
+.desktop-note { display: none; }
+.desktop-stage { position: fixed; inset: var(--notice-height) 0 0; overflow: hidden; }
+iframe { position: absolute; top: 0; left: 0; display: block; width: 1440px; height: 100%; border: 0; transform-origin: top left; background: #001a83; }
+.no-script { position: fixed; z-index: 2; top: 16px; left: 16px; margin: 0; padding: 16px; background: #fff; }
+.no-script a { color: #173665; }
+@media (max-width: 1100px) {
+  body { --notice-height: 36px; }
+  .desktop-note { position: fixed; inset: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 36px; margin: 0; padding: 0 12px; background: #eef3ff; color: #173665; font-size: 12px; line-height: 1.4; }
+}

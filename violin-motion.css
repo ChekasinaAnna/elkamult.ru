@@ -1,0 +1,11 @@
+.parents-cast .violin-scene { width: 100%; height: clamp(300px, 34vw, 440px); }
+.violin-stage { display: block; width: 100%; height: 100%; overflow: visible; }
+.violin-bow { transform-origin: 1195px 502px; animation: violin-stroke 3.6s ease-in-out infinite; animation-play-state: paused; }
+.violin-scene.life-visible .violin-bow { animation-play-state: running; }
+.characters-resting .violin-scene.life-visible .violin-bow { animation-play-state: paused; }
+@keyframes violin-stroke {
+  0%, 100% { transform: translate(-5px, 8px) rotate(-.2deg); }
+  50% { transform: translate(5px, -8px) rotate(.2deg); }
+}
+@media(max-width:560px) { .parents-cast .violin-scene { height: auto; aspect-ratio: 3 / 2; } }
+@media(prefers-reduced-motion:reduce) { .violin-bow { animation: none; } }

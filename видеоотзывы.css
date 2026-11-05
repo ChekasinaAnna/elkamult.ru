@@ -1,0 +1,236 @@
+/* Живые впечатления: только обложки, один понятный способ начать просмотр. */
+#reviews .video-review-reel {
+  margin-bottom: 72px;
+}
+#reviews .video-review-heading {
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+#reviews .video-review-heading h2 {
+  margin: 0;
+  color: #173665;
+  font-size: clamp(34px, 4vw, 55px);
+  text-wrap: balance;
+}
+#reviews .video-review-heading p:not(.eyebrow) {
+  margin: 16px 0 0;
+  color: #284c77;
+  font-size: 18px;
+  line-height: 1.5;
+}
+#reviews .video-review-heading .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 19px;
+  color: #416187;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 900;
+  letter-spacing: .115em;
+}
+#reviews .video-review-heading .eyebrow::before {
+  color: #527bb1;
+}
+#reviews .review-reel-controls {
+  gap: 12px;
+  padding-bottom: 2px;
+}
+#reviews .review-reel-controls button {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid #acc4dd;
+  border-radius: 50%;
+  color: #1559a3;
+  background: #fff;
+  transition: background-color .18s, border-color .18s;
+}
+#reviews [data-reel-step="-1"] svg { transform: rotate(180deg); }
+#reviews .review-reel-controls button:disabled {
+  color: #6c839d;
+  border-color: #cad9e8;
+  background: #e5edf6;
+  cursor: default;
+}
+#reviews .review-video-track {
+  display: flex;
+  gap: 24px;
+  padding: 8px 6px 18px;
+  margin: 0 -6px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+#reviews .review-video-track::-webkit-scrollbar { display: none; }
+#reviews .review-video-card {
+  flex: 0 0 calc((100% - 72px) / 3.45);
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  scroll-snap-align: start;
+  transform: none;
+}
+#reviews .review-video-open {
+  position: relative;
+  display: block;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #173665;
+  isolation: isolate;
+}
+#reviews .review-video-open img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transform: none;
+}
+#reviews .review-cover-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background: linear-gradient(165deg, #fff0ad 0%, #ffce62 38%, #fdb933 80%);
+  box-shadow: 0 8px 24px #001c6b4d, 0 0 0 4px #ffffff2e;
+  transform: translate(-50%, -50%);
+  transition: transform .18s;
+  pointer-events: none;
+}
+#reviews .review-cover-play::before {
+  content: "";
+  width: 0;
+  height: 0;
+  transform: translateX(2px);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid #123263;
+}
+#reviews .review-video-open:focus-visible,
+#reviews .review-reel-controls button:focus-visible,
+#reviews .review-video-track:focus-visible {
+  outline: 3px solid #1559a3;
+  outline-offset: 4px;
+}
+@media (hover: hover) {
+  #reviews .review-reel-controls button:not(:disabled):hover {
+    background: #e5f1ff;
+    border-color: #1559a3;
+  }
+  #reviews .review-video-open:hover .review-cover-play {
+    transform: translate(-50%, -50%) scale(1.07);
+  }
+}
+@media (max-width: 900px) {
+  #reviews .review-video-card { flex-basis: calc((100% - 40px) / 2.4); }
+  #reviews .review-video-track { gap: 20px; }
+}
+@media (max-width: 600px) {
+  #reviews .video-review-reel { margin-bottom: 48px; }
+  #reviews .video-review-heading { flex-wrap: wrap; gap: 20px; margin-bottom: 20px; }
+  #reviews .video-review-heading > div:first-child { width: 100%; }
+  #reviews .video-review-heading p:not(.eyebrow) { font-size: 16px; margin-top: 12px; }
+  #reviews .review-reel-controls { margin-left: auto; gap: 10px; }
+  #reviews .review-reel-controls button { width: 44px; height: 44px; }
+  #reviews .review-video-track { gap: 16px; padding-bottom: 10px; }
+  #reviews .review-video-card { flex-basis: 82%; max-width: 320px; border-radius: 20px; }
+  #reviews .review-cover-play { width: 56px; height: 56px; }
+  #reviews .review-cover-play::before { border-top-width: 10px; border-bottom-width: 10px; border-left-width: 15px; }
+}
+
+/* Нативный dialog удерживает фокус и закрывается по Escape. */
+.review-viewer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 24px 16px;
+  border: 0;
+  color: #fff;
+  background: transparent;
+  overflow: auto;
+}
+.review-viewer[open] { display: grid; place-items: center; }
+.review-viewer::backdrop { background: #06172bea; backdrop-filter: blur(8px); }
+.review-viewer-panel {
+  position: relative;
+  width: min(500px, calc((100vh - 184px) * .5625), calc(100vw - 32px));
+  width: min(500px, calc((100dvh - 184px) * .5625), calc(100vw - 32px));
+  margin-top: 56px;
+}
+.review-viewer .review-viewer-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #000;
+  border-radius: 20px;
+}
+.review-viewer-close {
+  position: absolute;
+  top: -56px;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  color: #fff;
+  background: #ffffff12;
+}
+.review-viewer-note {
+  margin: 12px -24px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+.review-viewer-fallback {
+  display: block;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.review-viewer [hidden] { display: none; }
+.review-viewer :focus-visible { outline: 3px solid #ffe04b; outline-offset: 4px; }
+.review-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+  #reviews .review-video-track { scroll-behavior: auto; }
+  #reviews .review-cover-play, #reviews .review-reel-controls button { transition: none; }
+}

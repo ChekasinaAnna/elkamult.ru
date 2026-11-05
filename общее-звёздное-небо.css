@@ -1,0 +1,88 @@
+/* Общее синее небо. Звёзды отделены от фона и готовы к будущей анимации.
+   Рисунок звёзд взят из принятого видеоблока. Движение пока не включено. */
+@media (min-width: 1101px) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes :is(#video, .story-section, #tickets, #producer, .final-section, #venue .venue-invitation, footer) {
+    background: #073cae url('assets/синее-небо-видео-33.png') center top / cover no-repeat;
+  }
+
+  /* Старые декоративные подложки не дублируют общий звёздный слой. */
+  body.winter-stage.fairy-books.mult-universe.artful-scenes :is(#video, .story-section, #tickets, #producer, .final-section) > :is(.poster-wash, .scene-scenery, .scene-stars) {
+    display: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes :is(#video, .story-section, #tickets, #producer, .final-section, #venue .venue-invitation, footer) > .night-starfield {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: inherit;
+    background: none;
+    opacity: 1;
+    pointer-events: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+    animation: none;
+  }
+
+  /* Мелкие точки и мягкие сияния — как в видеоблоке. */
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .night-starfield::before,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .night-starfield::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    animation: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .night-starfield::before {
+    background: url('страница/assets/show-starry-sky-61.svg') center top / 1200px 800px repeat;
+    opacity: .7;
+    -webkit-mask-image: linear-gradient(transparent, #000 9%, #000 82%, transparent);
+    mask-image: linear-gradient(transparent, #000 9%, #000 82%, transparent);
+  }
+
+  /* Более крупные звёзды остаются у краёв: центральная зона текста спокойнее. */
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .night-starfield::after {
+    background: url('страница/assets/winter-wishes.svg') center top / 900px 563px repeat;
+    opacity: .38;
+    -webkit-mask-image: linear-gradient(90deg, #000, transparent 20%, transparent 80%, #000);
+    mask-image: linear-gradient(90deg, #000, transparent 20%, transparent 80%, #000);
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #venue .venue-invitation {
+    background-position: 30% center;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #venue .venue-address-content {
+    z-index: 1;
+  }
+
+  /* В небольшой карточке меньше крупных звёзд и чуть тише мелкие. */
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #venue .night-starfield::before {
+    opacity: .55;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #venue .night-starfield::after {
+    opacity: .24;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes footer {
+    position: relative;
+    isolation: isolate;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes footer > :is(.wrap, .social-poster-backdrop) {
+    position: relative;
+    z-index: 1;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes footer .social-poster-backdrop {
+    background: transparent;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes footer .social-poster-backdrop::before,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes footer .social-poster-backdrop::after {
+    display: none;
+  }
+}

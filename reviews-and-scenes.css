@@ -1,0 +1,29 @@
+.video-review-reel { position:relative; z-index:1; margin-bottom:44px; }
+.video-review-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:24px; }
+.video-review-heading h2 { font-size:clamp(32px,4vw,52px); }
+.video-review-heading p:last-child { color:#50647e; margin-top:12px; }
+.review-reel-controls { display:flex; gap:10px; flex-shrink:0; }
+.review-reel-controls button { width:48px; height:48px; border:1px solid #bfccea; border-radius:50%; background:#fff; color:#244e9b; font-size:24px; cursor:pointer; }
+.review-reel-controls button:focus-visible, .review-video-track:focus-visible { outline:3px solid #eea346; outline-offset:4px; }
+.review-video-track { display:flex; gap:20px; overflow-x:auto; padding:8px 6px 18px; scroll-snap-type:x mandatory; scroll-behavior:smooth; scrollbar-color:#8296d2 #e2e8f7; scrollbar-width:thin; }
+.review-video-card { flex:0 0 clamp(230px,25vw,300px); scroll-snap-align:center; margin:0; background:#fff; border:5px solid #fff; border-radius:22px; overflow:hidden; box-shadow:0 8px 20px #203e8220; }
+.review-video-card video { display:block; width:100%; aspect-ratio:9/16; object-fit:contain; background:#0b2158; }
+.review-video-card figcaption { padding:12px 8px; text-align:center; color:#35517f; font-size:13px; font-weight:800; }
+.review-reel-hint { color:#526993; text-align:center; font-size:14px; margin-top:10px; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .whole-poster-hero .key-art > .whole-poster-image { -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(180deg,transparent,#000 3%,#000 100%); mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(180deg,transparent,#000 3%,#000 100%); }
+.whole-poster-hero .poster-scene { padding-bottom:0; }
+.winter-stage.fairy-books.mult-universe.artful-scenes .video-section { background:radial-gradient(ellipse at 85% 18%,#9372df55,transparent 60%),linear-gradient(155deg,#042293 10%,#4035a3 52%,#042293 100%); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .story-section { background:radial-gradient(ellipse at 18% 45%,#7658d354,transparent 60%),linear-gradient(130deg,#142b96,#3f31a0 55%,#042293); }
+.winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide > img { animation-name:tractor-idle; animation-duration:.9s; }
+.heroes-section > .wrap > .scale-proof { color:#194182; margin-top:25px; margin-bottom:25px; }
+@media(max-width:600px) { .video-review-heading { align-items:center; gap:12px; } .review-reel-controls button { width:38px; height:38px; } .review-video-card { flex-basis:78%; max-width:310px; } .review-video-track { gap:14px; } .review-reel-hint { font-size:12px; } }
+@media(prefers-reduced-motion:reduce) { .review-video-track { scroll-behavior:auto; } .winter-stage.fairy-books.mult-universe.artful-scenes .tractor-guide > img { animation:none; } }
+
+.company-signature .company-logo > img { width:50%; height:auto; margin-inline:auto; display:block; }
+
+.intro-cast .intro-luntik-luna > .intro-luntik { position:absolute; left:-8%; bottom:0; width:76%; height:100%; object-fit:contain; }
+.intro-cast .intro-luntik-luna > .intro-luna { position:absolute; right:-12%; bottom:0; width:60%; height:auto; object-fit:contain; -webkit-mask:url('assets/moona-mask-68.svg') center / contain no-repeat; mask:url('assets/moona-mask-68.svg') center / contain no-repeat; }
+.intro-cast .intro-luntik-luna .luna-ground-shadow { left:80%; bottom:1%; width:33%; }
+
+.reviews-section .reviews-grid { grid-template-columns:minmax(0,1fr); }
+.reviews-section .reviews-grid > div { max-width:850px; }

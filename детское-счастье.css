@@ -1,0 +1,197 @@
+/* Десктоп: голубой фон и фотокарточки, собирающиеся при прокрутке как в блоке о шоу. */
+@media (min-width: 1101px) {
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments {
+    --moments-card-top: 96px;
+    --moments-card-height: clamp(380px, 46vh, 460px);
+    padding: 76px 0 100px;
+    background: #edf7ff;
+    overflow: clip;
+    isolation: isolate;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments::before,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments::after,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments > .poster-wash,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments > .scene-scenery,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments > .scene-stars,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments > .scene-stitch,
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .moments-cast > .cast-art {
+    display: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments > .wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .moments-cast {
+    position: relative;
+    display: block;
+    max-width: none;
+    margin: 0 0 32px;
+    padding: 24px 0 20px;
+    text-align: center;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .cast-heading-copy {
+    width: 100%;
+    max-width: 960px;
+    min-width: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .eyebrow {
+    margin: 0 0 18px;
+    color: #416187;
+    justify-content: center;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments h2 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.14;
+    color: #173665;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .section-lead {
+    max-width: 960px;
+    margin: 22px auto 0;
+    color: #50647e;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .moments-lead-second {
+    display: block;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 28px 0 18px;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure {
+    position: relative;
+    display: block;
+    grid-row: auto;
+    flex: 0 0 auto;
+    width: min(1000px, 100%);
+    min-width: 0;
+    height: var(--moments-card-height);
+    min-height: var(--moments-card-height);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 22px;
+    background: #071830;
+    overflow: hidden;
+    box-shadow: none !important;
+    transform: none !important;
+    scale: 1 !important;
+    translate: none !important;
+    rotate: 0deg;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: auto 0 0;
+    height: 60%;
+    background: linear-gradient(180deg, transparent 0%, rgba(3, 17, 48, .64) 52%, rgba(3, 17, 48, .88) 100%);
+    pointer-events: none;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure > img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center 45%;
+    transform: none !important;
+    scale: 1 !important;
+    translate: none !important;
+    rotate: 0deg !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid figcaption {
+    position: absolute;
+    z-index: 2;
+    inset: auto 0 0;
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 28px 32px;
+    color: #fff;
+    background: transparent;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: -.3px;
+    text-align: left;
+    text-shadow: 0 1px 5px #07182b80;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid {
+      gap: clamp(100px, 24vh, 220px);
+    }
+
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure {
+      position: sticky;
+      top: calc(var(--moments-card-top) + var(--card-step, 0) * 14px);
+      z-index: calc(2 + var(--card-step, 0));
+    }
+
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure:nth-child(1) { --card-step: 0; --entry-rotation: -3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure:nth-child(2) { --card-step: 1; --entry-rotation: 3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure:nth-child(3) { --card-step: 2; --entry-rotation: -3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure:nth-child(4) { --card-step: 3; --entry-rotation: 3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure:nth-child(5) { --card-step: 4; --entry-rotation: -3deg; }
+
+    @media (min-height: 860px) {
+      body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .moments-cast {
+        position: sticky;
+        top: 88px;
+        z-index: 12;
+        isolation: isolate;
+      }
+
+      body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .moments-cast.is-pinned::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: -20px -80px;
+        pointer-events: none;
+        background: radial-gradient(ellipse at center, #edf7ff 20%, #edf7fff5 48%, #edf7ff00 76%);
+      }
+    }
+
+    @supports (animation-timeline: view()) {
+      body.winter-stage.fairy-books.mult-universe.artful-scenes .moments .photo-grid > figure {
+        animation: mult-moment-arrival linear both !important;
+        animation-timeline: view() !important;
+        animation-range: entry 0% entry 100% !important;
+      }
+    }
+  }
+
+  @keyframes mult-moment-arrival {
+    from { rotate: var(--entry-rotation); }
+    to { rotate: 0deg; }
+  }
+}

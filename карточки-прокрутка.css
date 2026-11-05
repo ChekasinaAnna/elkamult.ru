@@ -1,0 +1,108 @@
+@media (min-width: 1101px) {
+  /* Десктоп: карточки постепенно собираются в стопку при обычной прокрутке. */
+  @media (prefers-reduced-motion: no-preference) {
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about { overflow: clip; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(100px, 24vh, 220px);
+      padding: 28px 0 18px;
+    }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article {
+      position: sticky;
+      top: calc(96px + var(--card-step, 0) * 14px);
+      z-index: calc(2 + var(--card-step, 0));
+      display: grid;
+      grid-template-columns: 54% 46%;
+      width: min(880px, 100%);
+      min-height: 340px;
+      box-shadow: none;
+    }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(1) { --card-step: 0; --entry-rotation: -3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(2) { --card-step: 1; --entry-rotation: 3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(3) { --card-step: 2; --entry-rotation: -3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(4) { --card-step: 3; --entry-rotation: 3deg; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-photo {
+      height: 100%;
+      min-height: 340px;
+      object-fit: cover;
+    }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 14px;
+      padding: 32px;
+    }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article::after { content: none; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-number { margin: 0; }
+    body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-copy > div { width: 100%; }
+    @media (min-height: 740px) {
+      body.winter-stage.fairy-books.mult-universe.artful-scenes #about .show-scale-panel {
+        position: sticky;
+        top: 88px;
+        z-index: 12;
+        padding: 24px 0 20px;
+        background: transparent;
+        isolation: isolate;
+      }
+      body.winter-stage.fairy-books.mult-universe.artful-scenes #about .show-scale-panel.is-pinned::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: -20px -80px;
+        pointer-events: none;
+        background: radial-gradient(ellipse at center, #edf7ff 20%, #edf7fff5 48%, #edf7ff00 76%);
+      }
+      body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article {
+        top: calc(285px + var(--card-step, 0) * 14px);
+      }
+    }
+    @supports (animation-timeline: view()) {
+      body.winter-stage.fairy-books.mult-universe.artful-scenes #about .show-scale-panel.is-pinned::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: -20px -80px;
+        pointer-events: none;
+        background: radial-gradient(ellipse at center, #edf7ff 20%, #edf7fff5 48%, #edf7ff00 76%);
+      }
+      body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article {
+        animation: mult-card-arrival linear both !important;
+        animation-timeline: view() !important;
+        animation-range: entry 0% entry 100% !important;
+      }
+    }
+  }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article::after { content: none; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-number { margin: 0; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 14px;
+    padding: 32px;
+  }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .benefit-copy > div { width: 100%; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .benefit-archive-note {
+    display: none;
+  }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .infographic-icon { width: 48px; height: 48px; flex: 0 0 48px; transform: none; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .infographic-icon img { width: 48px; height: 48px; transform: none; }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(1) .infographic-icon img { content: url('assets/значок-интерактив-31.svg'); }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(2) .infographic-icon img { content: url('assets/значок-эффекты-31.svg'); }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(3) .infographic-icon img { content: url('assets/значок-история-31.svg'); }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits > article:nth-child(4) .infographic-icon img { content: url('assets/значок-мелодия-31.svg'); }
+  body.winter-stage.fairy-books.mult-universe.artful-scenes #about .evidence-benefits .above-shoulders {
+    background: #ffce61;
+    color: #143cab;
+  }
+  @keyframes mult-card-arrival {
+    from { rotate: var(--entry-rotation); }
+    to { rotate: 0deg; }
+  }
+
+}
