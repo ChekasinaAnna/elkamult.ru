@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 180" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="veil" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="white" stop-opacity="0"/>
+      <stop offset=".48" stop-color="white" stop-opacity=".6"/>
+      <stop offset="1" stop-color="white"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#veil)" d="M-70 75C160 9 390 155 665 87S1195 12 1430 81S1735 113 1870 48V210H-70Z"/>
+  <path fill="white" opacity=".26" d="M-70 100C180 152 391 53 644 118S1130 151 1380 91S1705 70 1870 118V210H-70Z"/>
+</svg>
